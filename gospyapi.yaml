@@ -1,0 +1,353 @@
+openapi: 3.0.0
+info:
+  title: Redis OM and Express Skeleton API for gospy
+  description: >
+    A simple sample API that shows assorted ways to use Redis OM for
+    Node.js with an Express applciation.
+  version: 1.0.0
+
+paths:
+  /person:
+    put:
+      tags:
+        - Person
+      description: Creates a new person with the specified attributes
+      summary: Create person
+      operationId: createPerson
+      requestBody:
+        description: person
+        required: true
+        content:
+          application/json:
+            schema:
+              title: person
+              allOf:
+                - $ref: "#/components/schemas/person"
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                allOf:
+                  - $ref: "#/components/schemas/person_id"
+                  - $ref: "#/components/schemas/person"
+
+  /person/{id}:
+    get:
+      tags:
+        - Person
+      description: Gets a specific person by ID
+      summary: Get person
+      operationId: fetchPerson
+      parameters:
+        - $ref: "#/components/parameters/id"
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                allOf:
+                  - $ref: "#/components/schemas/person_id"
+                  - $ref: "#/components/schemas/person"
+    post:
+      tags:
+        - Person
+      description: Updates a specific person
+      summary: Update person
+      operationId: updatePerson
+      parameters:
+        - $ref: "#/components/parameters/id"
+      requestBody:
+        description: person
+        required: true
+        content:
+          application/json:
+            schema:
+              title: person
+              allOf:
+                - $ref: "#/components/schemas/person"
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                allOf:
+                  - $ref: "#/components/schemas/person_id"
+                  - $ref: "#/components/schemas/person"
+    delete:
+      tags: 
+         - Person
+      description: Deletes the person by ID
+      summary: Delete person
+      operationId: removePerson
+      parameters:
+        - $ref: "#/components/parameters/id"
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                allOf:
+                  - $ref: "#/components/schemas/person_id"
+
+  /persons/all:
+    get:
+      tags:
+        - Search
+      description: Gets all the persons
+      summary: Get all persons
+      operationId: fetchAllPersons
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                allOf:
+                  - $ref: "#/components/schemas/persons"
+
+  /persons/by-name/{name}:
+    get:
+      tags:
+        - Search
+      description: Gets persons by name
+      summary: Get persons by  name
+      operationId: fetchPersonsByName
+      parameters:
+        - $ref: "#/components/parameters/name"
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                allOf:
+                  - $ref: "#/components/schemas/persons"
+  
+  /persons/by-token/{token}:
+    get:
+      tags:
+        - Search
+      description: Gets persons by token of the device tracked
+      summary: Get persons by token of the device tracked
+      operationId: fetchPersonsByToken
+      parameters:
+        - $ref: "#/components/parameters/token"
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                allOf:
+                  - $ref: "#/components/schemas/persons"
+
+  /persons/near/{longitude},{latitude}/radius/{radius}:
+    get:
+      tags:
+        - Search
+      description: Gets persons near a location
+      summary: Get persons near location
+      operationId: fetchPersonsNearLocation
+      parameters:
+        - $ref: "#/components/parameters/longitude"
+        - $ref: "#/components/parameters/latitude"
+        - $ref: "#/components/parameters/radius"
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                allOf:
+                  - $ref: "#/components/schemas/persons"
+
+  /person/byID/{id}/location/{longitude},{latitude}:
+    patch:
+      tags: 
+        - Location
+      description: Updates the person's location
+      summary: Update person's location
+      operationId: updatePersonLocationByID
+      parameters:
+        - $ref: "#/components/parameters/id"
+        - $ref: "#/components/parameters/longitude"
+        - $ref: "#/components/parameters/latitude"
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                allOf:
+                  - $ref: "#/components/schemas/person_id"
+                  - $ref: "#/components/schemas/person_location"
+
+  /person/byName/{name}/location/{longitude},{latitude}:
+    patch:
+      tags: 
+        - Location
+      description: Updates the person's location
+      summary: Update person's location
+      operationId: updatePersonLocationByName
+      parameters:
+        - $ref: "#/components/parameters/name"
+        - $ref: "#/components/parameters/longitude"
+        - $ref: "#/components/parameters/latitude"
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                allOf:
+                  - $ref: "#/components/schemas/person_name"
+                  - $ref: "#/components/schemas/person_location"
+
+components:
+  parameters:
+    id:
+      name: id
+      in: path
+      required: true
+      description: The ID of the person to interact with
+      schema:
+        $ref: "#/components/schemas/id"
+    name:
+      name: name
+      in: path
+      required: true
+      description: The name of the person
+      schema:
+        $ref: "#/components/schemas/name"
+    longitude:
+      name: longitude
+      in: path
+      required: true
+      description: The longitude status of the person
+      schema:
+        $ref: "#/components/schemas/coordinate"
+    latitude:
+      name: latitude
+      in: path
+      required: true
+      description: The latitude status of the person
+      schema:
+        $ref: "#/components/schemas/coordinate"
+    radius:
+      name: radius
+      in: path
+      required: true
+      description: A radius for a location search in kilometers
+      schema:
+        $ref: "#/components/schemas/radius"
+    token:
+      name: token
+      in: path
+      required: true
+      description: The token of the person's device tracked
+      schema:
+        $ref: "#/components/schemas/token"
+
+  schemas:
+    person_id:
+      type: object
+      properties:
+        entityId:
+          $ref: "#/components/schemas/id"
+
+    persons:
+      type: array
+      items:
+        $ref: "#/components/schemas/person"
+
+    person:
+      allOf:
+        - $ref: "#/components/schemas/person_name"
+        - $ref: "#/components/schemas/person_location"
+        - $ref: "#/components/schemas/person_token"
+
+    person_name:
+      type: object
+      properties:
+        name:
+          $ref: "#/components/schemas/name"
+    
+    person_token:
+      type: object
+      properties:
+        deviceToken:
+          $ref: "#/components/schemas/token"
+
+    person_location:
+      allOf:
+        - type: object
+          properties:
+            location:
+              $ref: "#/components/schemas/location"
+        - $ref: "#/components/schemas/person_location_updated"
+
+    person_location_updated:
+      type: object
+      properties:
+        locationUpdated:
+          $ref: "#/components/schemas/location_updated"
+
+    id:
+      description: The ID of the person
+      type: string
+      example: 01FX8N39YVZRCQNAW0R5T53H5T
+
+    name:
+      description: The name of the person
+      type: string
+      example: Rupert / xiaomi9t
+
+    location:
+      description: The location of the person on the globe
+      $ref: "#/components/schemas/geo"
+
+    location_updated:
+      description: >
+        The date and time when the user last updated their location
+        on the globe
+      type: string
+      format: date-time
+      example: 2022-03-01T12:34:56.123Z
+
+    geo:
+      type: object
+      required:
+        - longitude
+        - latitude
+      properties:
+        longitude:
+          description: The longitudinal position on the globe
+          $ref: "#/components/schemas/coordinate"
+          example: -2.518
+        latitude:
+          description: The latitudinal position on the globe
+          $ref: "#/components/schemas/coordinate"
+          example: 53.259
+
+    coordinate:
+      description: >
+        The longitudinal or latitudinal position on the globe
+      type: number
+      format: float
+      example: 45.678
+
+    radius:
+      description: A radius, in miles
+      type: integer
+      format: int32
+      example: 20
+
+    token:
+      description: The token of the person's tracked device
+      type: string
+      example: c2DZ-Zx7Saa6UvKOVui1yk
