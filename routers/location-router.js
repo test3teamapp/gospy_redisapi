@@ -4,7 +4,7 @@ import { connection } from '../om/redisDB_client.js'
 
 export const router = Router()
 
-router.patch('/byID/:id/location/:lng,:lat', async (req, res) => {
+router.patch('/byID/:id/location/:lat:lng', async (req, res) => {
 
   const id = req.params.id
   const longitude = Number(req.params.lng)

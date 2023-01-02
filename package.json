@@ -10,11 +10,13 @@
   "license": "MIT",
   "private": true,
   "devDependencies": {
+    "cors": "^2.8.5",
     "nodemon": "^2.0.15"
   },
   "dependencies": {
     "dotenv": "^16.0.0",
     "express": "^4.17.3",
+    "ioredis": "^5.2.4",
     "redis": "^4.0.4",
     "redis-om": "^0.2.0",
     "swagger-ui-express": "^4.3.0",

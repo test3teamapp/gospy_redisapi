@@ -208,6 +208,24 @@ paths:
                   - $ref: "#/components/schemas/person_name"
                   - $ref: "#/components/schemas/person_location"
 
+  /tracking/byName/{name}/hours/{hours}:
+    get:
+      tags: 
+        - Tracks
+      description: Get person's last locations
+      summary: Get person's last locations
+      operationId: getPersonLastLocationByName
+      parameters:
+        - $ref: "#/components/parameters/name"
+        - $ref: "#/components/parameters/hours"
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                allOf:
+                  - $ref: "#/components/schemas/person_track_locations"
 components:
   parameters:
     id:
@@ -252,6 +270,13 @@ components:
       description: The token of the person's device tracked
       schema:
         $ref: "#/components/schemas/token"
+    hours:
+      name: hours
+      in: path
+      required: true
+      description: Hours past (for tracking)
+      schema:
+        $ref: "#/components/schemas/hours"
 
   schemas:
     person_id:
@@ -297,6 +322,16 @@ components:
         locationUpdated:
           $ref: "#/components/schemas/location_updated"
 
+    person_track_locations:
+      allOf:
+        - type: object
+          properties:
+            timestamp:
+              $ref: "#/components/schemas/timestamp"
+            location:
+              $ref: "#/components/schemas/location"
+        
+
     id:
       description: The ID of the person
       type: string
@@ -305,7 +340,7 @@ components:
     name:
       description: The name of the person
       type: string
-      example: Rupert / xiaomi9t
+      example: xiaominote8T
 
     location:
       description: The location of the person on the globe
@@ -318,6 +353,14 @@ components:
       type: string
       format: date-time
       example: 2022-03-01T12:34:56.123Z
+
+    timestamp:
+      description: >
+        The date and time when the user last updated their location
+        on the globe
+      type: string
+      format: time
+      example: 1672481702616-0 (ms)
 
     geo:
       type: object
@@ -346,6 +389,12 @@ components:
       type: integer
       format: int32
       example: 20
+
+    hours:
+      description: Hours past (for tracking)
+      type: integer
+      format: int32
+      example: 12
 
     token:
       description: The token of the person's tracked device
