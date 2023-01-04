@@ -166,7 +166,7 @@ paths:
                 allOf:
                   - $ref: "#/components/schemas/persons"
 
-  /person/byID/{id}/location/{longitude},{latitude}:
+  /locationUpdate/byID/{id}/location/{longitude},{latitude}:
     patch:
       tags: 
         - Location
@@ -187,7 +187,7 @@ paths:
                   - $ref: "#/components/schemas/person_id"
                   - $ref: "#/components/schemas/person_location"
 
-  /person/byName/{name}/location/{longitude},{latitude}:
+  /locationUpdate/byName/{name}/location/{longitude},{latitude}:
     patch:
       tags: 
         - Location
@@ -226,6 +226,26 @@ paths:
               schema:
                 allOf:
                   - $ref: "#/components/schemas/person_track_locations"
+  
+  /sendCommand/byName/{name}/command/{command}:
+    get:
+      tags: 
+        - Command
+      description: Send person's device command by push notification
+      summary: Send person's device command by push notification
+      operationId: sendCommandByName
+      parameters:
+        - $ref: "#/components/parameters/name"
+        - $ref: "#/components/parameters/command"
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                allOf:
+                  - $ref: "#/components/schemas/person_name"
+                  - $ref: "#/components/schemas/person_location"
 components:
   parameters:
     id:
@@ -277,6 +297,14 @@ components:
       description: Hours past (for tracking)
       schema:
         $ref: "#/components/schemas/hours"
+
+    command:
+      name: command
+      in: path
+      required: true
+      description: Command to send to device via push notification
+      schema:
+        $ref: "#/components/schemas/command"
 
   schemas:
     person_id:
@@ -341,6 +369,11 @@ components:
       description: The name of the person
       type: string
       example: xiaominote8T
+
+    command:
+      description: The command to send to device by push notifications
+      type: string
+      example: TRIGGER_LU START_TRACKING STOP_TRACKING
 
     location:
       description: The location of the person on the globe

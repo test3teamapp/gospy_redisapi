@@ -1,0 +1,2455 @@
+
+> redis-om-express@1.0.0 start
+> nodemon server.js
+
+[33m[nodemon] 2.0.15[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node server.js`[39m
+node:events:491
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: EBADF: bad file descriptor, read
+Emitted 'error' event on ReadStream instance at:
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at errorOrDestroy (node:internal/streams/destroy:214:7)
+    at node:internal/fs/streams:258:9
+    at FSReqCallback.wrapper [as oncomplete] (node:fs:681:5) {
+  errno: -9,
+  code: 'EBADF',
+  syscall: 'read'
+}
+
+Node.js v18.12.1
+
+> redis-om-express@1.0.0 start
+> nodemon server.js
+
+[33m[nodemon] 2.0.15[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node server.js`[39m
+node:events:491
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: EBADF: bad file descriptor, read
+Emitted 'error' event on ReadStream instance at:
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at errorOrDestroy (node:internal/streams/destroy:214:7)
+    at node:internal/fs/streams:258:9
+    at FSReqCallback.wrapper [as oncomplete] (node:fs:681:5) {
+  errno: -9,
+  code: 'EBADF',
+  syscall: 'read'
+}
+
+Node.js v18.12.1
+
+> redis-om-express@1.0.0 start
+> nodemon server.js
+
+[33m[nodemon] 2.0.15[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node server.js`[39m
+node:events:491
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: EBADF: bad file descriptor, read
+Emitted 'error' event on ReadStream instance at:
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at errorOrDestroy (node:internal/streams/destroy:214:7)
+    at node:internal/fs/streams:258:9
+    at FSReqCallback.wrapper [as oncomplete] (node:fs:681:5) {
+  errno: -9,
+  code: 'EBADF',
+  syscall: 'read'
+}
+
+Node.js v18.12.1
+
+> redis-om-express@1.0.0 start
+> nodemon server.js
+
+[33m[nodemon] 2.0.15[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node server.js`[39m
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+node:events:491
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::8084
+    at Server.setupListenHandle [as _listen2] (node:net:1485:16)
+    at listenInCluster (node:net:1533:12)
+    at Server.listen (node:net:1621:7)
+    at Function.listen (/home/jimbo/gospy_redisapi/node_modules/express/lib/application.js:618:24)
+    at file:///home/jimbo/gospy_redisapi/server.js:31:5
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1512:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 8084
+}
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+node:events:491
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::8084
+    at Server.setupListenHandle [as _listen2] (node:net:1485:16)
+    at listenInCluster (node:net:1533:12)
+    at Server.listen (node:net:1621:7)
+    at Function.listen (/home/jimbo/gospy_redisapi/node_modules/express/lib/application.js:618:24)
+    at file:///home/jimbo/gospy_redisapi/server.js:31:5
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1512:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 8084
+}
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+node:events:491
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::8084
+    at Server.setupListenHandle [as _listen2] (node:net:1485:16)
+    at listenInCluster (node:net:1533:12)
+    at Server.listen (node:net:1621:7)
+    at Function.listen (/home/jimbo/gospy_redisapi/node_modules/express/lib/application.js:618:24)
+    at file:///home/jimbo/gospy_redisapi/server.js:31:5
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1512:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 8084
+}
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+node:events:491
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::8084
+    at Server.setupListenHandle [as _listen2] (node:net:1485:16)
+    at listenInCluster (node:net:1533:12)
+    at Server.listen (node:net:1621:7)
+    at Function.listen (/home/jimbo/gospy_redisapi/node_modules/express/lib/application.js:618:24)
+    at file:///home/jimbo/gospy_redisapi/server.js:31:5
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1512:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 8084
+}
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+node:events:491
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::8084
+    at Server.setupListenHandle [as _listen2] (node:net:1485:16)
+    at listenInCluster (node:net:1533:12)
+    at Server.listen (node:net:1621:7)
+    at Function.listen (/home/jimbo/gospy_redisapi/node_modules/express/lib/application.js:618:24)
+    at file:///home/jimbo/gospy_redisapi/server.js:31:5
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1512:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 8084
+}
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+file:///home/jimbo/gospy_redisapi/server.js:14
+import { router as trackRouter } from './routers/track-router.js'
+                   ^^^^^^^^^^^
+
+SyntaxError: Identifier 'trackRouter' has already been declared
+    at ESMLoader.moduleStrategy (node:internal/modules/esm/translators:119:18)
+    at ESMLoader.moduleProvider (node:internal/modules/esm/loader:468:14)
+    at async link (node:internal/modules/esm/module_job:67:21)
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+node:events:491
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::8084
+    at Server.setupListenHandle [as _listen2] (node:net:1485:16)
+    at listenInCluster (node:net:1533:12)
+    at Server.listen (node:net:1621:7)
+    at Function.listen (/home/jimbo/gospy_redisapi/node_modules/express/lib/application.js:618:24)
+    at file:///home/jimbo/gospy_redisapi/server.js:32:5
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1512:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 8084
+}
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+file:///home/jimbo/gospy_redisapi/routers/command-router.js:6
+var FCM = require('fcm-node');
+          ^
+
+ReferenceError: require is not defined in ES module scope, you can use import instead
+This file is being treated as an ES module because it has a '.js' file extension and '/home/jimbo/gospy_redisapi/package.json' contains "type": "module". To treat it as a CommonJS script, rename it to use the '.cjs' file extension.
+    at file:///home/jimbo/gospy_redisapi/routers/command-router.js:6:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+file:///home/jimbo/gospy_redisapi/routers/command-router.js:6
+var FCM = require('fcm-node');
+          ^
+
+ReferenceError: require is not defined in ES module scope, you can use import instead
+This file is being treated as an ES module because it has a '.js' file extension and '/home/jimbo/gospy_redisapi/package.json' contains "type": "module". To treat it as a CommonJS script, rename it to use the '.cjs' file extension.
+    at file:///home/jimbo/gospy_redisapi/routers/command-router.js:6:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+file:///home/jimbo/gospy_redisapi/routers/command-router.js:6
+var FCM = require('fcm-node');
+          ^
+
+ReferenceError: require is not defined in ES module scope, you can use import instead
+This file is being treated as an ES module because it has a '.js' file extension and '/home/jimbo/gospy_redisapi/package.json' contains "type": "module". To treat it as a CommonJS script, rename it to use the '.cjs' file extension.
+    at file:///home/jimbo/gospy_redisapi/routers/command-router.js:6:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+file:///home/jimbo/gospy_redisapi/routers/command-router.js:6
+var FCM = require('fcm-node');
+          ^
+
+ReferenceError: require is not defined in ES module scope, you can use import instead
+This file is being treated as an ES module because it has a '.js' file extension and '/home/jimbo/gospy_redisapi/package.json' contains "type": "module". To treat it as a CommonJS script, rename it to use the '.cjs' file extension.
+    at file:///home/jimbo/gospy_redisapi/routers/command-router.js:6:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+file:///home/jimbo/gospy_redisapi/routers/command-router.js:6
+var FCM = require('fcm-node');
+          ^
+
+ReferenceError: require is not defined in ES module scope, you can use import instead
+This file is being treated as an ES module because it has a '.js' file extension and '/home/jimbo/gospy_redisapi/package.json' contains "type": "module". To treat it as a CommonJS script, rename it to use the '.cjs' file extension.
+    at file:///home/jimbo/gospy_redisapi/routers/command-router.js:6:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+file:///home/jimbo/gospy_redisapi/routers/command-router.js:6
+var FCM = require('fcm-node');
+          ^
+
+ReferenceError: require is not defined in ES module scope, you can use import instead
+This file is being treated as an ES module because it has a '.js' file extension and '/home/jimbo/gospy_redisapi/package.json' contains "type": "module". To treat it as a CommonJS script, rename it to use the '.cjs' file extension.
+    at file:///home/jimbo/gospy_redisapi/routers/command-router.js:6:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+file:///home/jimbo/gospy_redisapi/routers/command-router.js:6
+const redis = new Redis();
+^^^^^
+
+SyntaxError: Unexpected token 'const'
+    at ESMLoader.moduleStrategy (node:internal/modules/esm/translators:119:18)
+    at ESMLoader.moduleProvider (node:internal/modules/esm/loader:468:14)
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+file:///home/jimbo/gospy_redisapi/routers/command-router.js:6
+const redis = new Redis();
+^^^^^
+
+SyntaxError: Unexpected token 'const'
+    at ESMLoader.moduleStrategy (node:internal/modules/esm/translators:119:18)
+    at ESMLoader.moduleProvider (node:internal/modules/esm/loader:468:14)
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+file:///home/jimbo/gospy_redisapi/routers/command-router.js:5
+import { default as }
+                    ^
+
+SyntaxError: Unexpected token '}'
+    at ESMLoader.moduleStrategy (node:internal/modules/esm/translators:119:18)
+    at ESMLoader.moduleProvider (node:internal/modules/esm/loader:468:14)
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+file:///home/jimbo/gospy_redisapi/routers/command-router.js:6
+const redis = new Redis();
+^^^^^
+
+SyntaxError: Unexpected token 'const'
+    at ESMLoader.moduleStrategy (node:internal/modules/esm/translators:119:18)
+    at ESMLoader.moduleProvider (node:internal/modules/esm/loader:468:14)
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+node:internal/errors:484
+    ErrorCaptureStackTrace(err);
+    ^
+
+Error [ERR_MODULE_NOT_FOUND]: Cannot find package '/home/jimbo/gospy_redisapi/node_modules//' imported from /home/jimbo/gospy_redisapi/routers/command-router.js
+    at new NodeError (node:internal/errors:393:5)
+    at legacyMainResolve (node:internal/modules/esm/resolve:235:9)
+    at packageResolve (node:internal/modules/esm/resolve:847:14)
+    at moduleResolve (node:internal/modules/esm/resolve:909:20)
+    at defaultResolve (node:internal/modules/esm/resolve:1124:11)
+    at nextResolve (node:internal/modules/esm/loader:163:28)
+    at ESMLoader.resolve (node:internal/modules/esm/loader:841:30)
+    at ESMLoader.getModuleJob (node:internal/modules/esm/loader:424:18)
+    at ModuleWrap.<anonymous> (node:internal/modules/esm/module_job:76:40)
+    at link (node:internal/modules/esm/module_job:75:36) {
+  code: 'ERR_MODULE_NOT_FOUND'
+}
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+node:events:491
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::8084
+    at Server.setupListenHandle [as _listen2] (node:net:1485:16)
+    at listenInCluster (node:net:1533:12)
+    at Server.listen (node:net:1621:7)
+    at Function.listen (/home/jimbo/gospy_redisapi/node_modules/express/lib/application.js:618:24)
+    at file:///home/jimbo/gospy_redisapi/server.js:33:5
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1512:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 8084
+}
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+file:///home/jimbo/gospy_redisapi/routers/command-router.js:8
+var FCM = require('fcm-node');
+    ^
+
+SyntaxError: Identifier 'FCM' has already been declared
+    at ESMLoader.moduleStrategy (node:internal/modules/esm/translators:119:18)
+    at ESMLoader.moduleProvider (node:internal/modules/esm/loader:468:14)
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+file:///home/jimbo/gospy_redisapi/routers/command-router.js:8
+var FCM =;
+    ^
+
+SyntaxError: Identifier 'FCM' has already been declared
+    at ESMLoader.moduleStrategy (node:internal/modules/esm/translators:119:18)
+    at ESMLoader.moduleProvider (node:internal/modules/esm/loader:468:14)
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+file:///home/jimbo/gospy_redisapi/routers/command-router.js:10
+export const router = Router()
+^^^^^^
+
+SyntaxError: Unexpected token 'export'
+    at ESMLoader.moduleStrategy (node:internal/modules/esm/translators:119:18)
+    at ESMLoader.moduleProvider (node:internal/modules/esm/loader:468:14)
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+node:events:491
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::8084
+    at Server.setupListenHandle [as _listen2] (node:net:1485:16)
+    at listenInCluster (node:net:1533:12)
+    at Server.listen (node:net:1621:7)
+    at Function.listen (/home/jimbo/gospy_redisapi/node_modules/express/lib/application.js:618:24)
+    at file:///home/jimbo/gospy_redisapi/server.js:33:5
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1512:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 8084
+}
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+file:///home/jimbo/gospy_redisapi/routers/command-router.js:8
+var fcm - new FCM
+        ^
+
+SyntaxError: Unexpected token '-'
+    at ESMLoader.moduleStrategy (node:internal/modules/esm/translators:119:18)
+    at ESMLoader.moduleProvider (node:internal/modules/esm/loader:468:14)
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+file:///home/jimbo/gospy_redisapi/routers/command-router.js:8
+var fcm - new FCM()
+        ^
+
+SyntaxError: Unexpected token '-'
+    at ESMLoader.moduleStrategy (node:internal/modules/esm/translators:119:18)
+    at ESMLoader.moduleProvider (node:internal/modules/esm/loader:468:14)
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+file:///home/jimbo/gospy_redisapi/routers/command-router.js:8
+var fcm - new FCM()
+        ^
+
+SyntaxError: Unexpected token '-'
+    at ESMLoader.moduleStrategy (node:internal/modules/esm/translators:119:18)
+    at ESMLoader.moduleProvider (node:internal/modules/esm/loader:468:14)
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+file:///home/jimbo/gospy_redisapi/routers/command-router.js:8
+var fcm  new FCM();
+         ^^^
+
+SyntaxError: Unexpected token 'new'
+    at ESMLoader.moduleStrategy (node:internal/modules/esm/translators:119:18)
+    at ESMLoader.moduleProvider (node:internal/modules/esm/loader:468:14)
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+/home/jimbo/gospy_redisapi/node_modules/fcm-node/lib/fcm.js:16
+        throw Error('You must provide the APIKEY for your firebase application.');
+              ^
+
+Error: You must provide the APIKEY for your firebase application.
+    at new FCM (/home/jimbo/gospy_redisapi/node_modules/fcm-node/lib/fcm.js:16:15)
+    at file:///home/jimbo/gospy_redisapi/routers/command-router.js:8:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+/home/jimbo/gospy_redisapi/node_modules/fcm-node/lib/fcm.js:16
+        throw Error('You must provide the APIKEY for your firebase application.');
+              ^
+
+Error: You must provide the APIKEY for your firebase application.
+    at new FCM (/home/jimbo/gospy_redisapi/node_modules/fcm-node/lib/fcm.js:16:15)
+    at file:///home/jimbo/gospy_redisapi/routers/command-router.js:8:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+/home/jimbo/gospy_redisapi/node_modules/fcm-node/lib/fcm.js:16
+        throw Error('You must provide the APIKEY for your firebase application.');
+              ^
+
+Error: You must provide the APIKEY for your firebase application.
+    at new FCM (/home/jimbo/gospy_redisapi/node_modules/fcm-node/lib/fcm.js:16:15)
+    at file:///home/jimbo/gospy_redisapi/routers/command-router.js:9:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+(node:26690) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 exit listeners added to [Bus]. Use emitter.setMaxListeners() to increase limit
+(Use `node --trace-warnings ...` to show where the warning was created)
+/home/jimbo/gospy_redisapi/node_modules/fcm-node/lib/fcm.js:16
+        throw Error('You must provide the APIKEY for your firebase application.');
+              ^
+
+Error: You must provide the APIKEY for your firebase application.
+    at new FCM (/home/jimbo/gospy_redisapi/node_modules/fcm-node/lib/fcm.js:16:15)
+    at file:///home/jimbo/gospy_redisapi/routers/command-router.js:9:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+/home/jimbo/gospy_redisapi/node_modules/fcm-node/lib/fcm.js:16
+        throw Error('You must provide the APIKEY for your firebase application.');
+              ^
+
+Error: You must provide the APIKEY for your firebase application.
+    at new FCM (/home/jimbo/gospy_redisapi/node_modules/fcm-node/lib/fcm.js:16:15)
+    at file:///home/jimbo/gospy_redisapi/routers/command-router.js:8:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+file:///home/jimbo/gospy_redisapi/routers/command-router.js:8
+var fcm = new FCM(process.env.);
+                              ^
+
+SyntaxError: Unexpected token ')'
+    at ESMLoader.moduleStrategy (node:internal/modules/esm/translators:119:18)
+    at ESMLoader.moduleProvider (node:internal/modules/esm/loader:468:14)
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+/home/jimbo/gospy_redisapi/node_modules/fcm-node/lib/fcm.js:16
+        throw Error('You must provide the APIKEY for your firebase application.');
+              ^
+
+Error: You must provide the APIKEY for your firebase application.
+    at new FCM (/home/jimbo/gospy_redisapi/node_modules/fcm-node/lib/fcm.js:16:15)
+    at file:///home/jimbo/gospy_redisapi/routers/command-router.js:8:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+node:events:491
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::8084
+    at Server.setupListenHandle [as _listen2] (node:net:1485:16)
+    at listenInCluster (node:net:1533:12)
+    at Server.listen (node:net:1621:7)
+    at Function.listen (/home/jimbo/gospy_redisapi/node_modules/express/lib/application.js:618:24)
+    at file:///home/jimbo/gospy_redisapi/server.js:33:5
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1512:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 8084
+}
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+node:events:491
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::8084
+    at Server.setupListenHandle [as _listen2] (node:net:1485:16)
+    at listenInCluster (node:net:1533:12)
+    at Server.listen (node:net:1621:7)
+    at Function.listen (/home/jimbo/gospy_redisapi/node_modules/express/lib/application.js:618:24)
+    at file:///home/jimbo/gospy_redisapi/server.js:33:5
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1512:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 8084
+}
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+file:///home/jimbo/gospy_redisapi/routers/command-router.js:16
+    const hours = req.params.hours)
+                                  ^
+
+SyntaxError: Unexpected token ')'
+    at ESMLoader.moduleStrategy (node:internal/modules/esm/translators:119:18)
+    at ESMLoader.moduleProvider (node:internal/modules/esm/loader:468:14)
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+node:events:491
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::8084
+    at Server.setupListenHandle [as _listen2] (node:net:1485:16)
+    at listenInCluster (node:net:1533:12)
+    at Server.listen (node:net:1621:7)
+    at Function.listen (/home/jimbo/gospy_redisapi/node_modules/express/lib/application.js:618:24)
+    at file:///home/jimbo/gospy_redisapi/server.js:33:5
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1512:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 8084
+}
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+node:events:491
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::8084
+    at Server.setupListenHandle [as _listen2] (node:net:1485:16)
+    at listenInCluster (node:net:1533:12)
+    at Server.listen (node:net:1621:7)
+    at Function.listen (/home/jimbo/gospy_redisapi/node_modules/express/lib/application.js:618:24)
+    at file:///home/jimbo/gospy_redisapi/server.js:33:5
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1512:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 8084
+}
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+node:events:491
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::8084
+    at Server.setupListenHandle [as _listen2] (node:net:1485:16)
+    at listenInCluster (node:net:1533:12)
+    at Server.listen (node:net:1621:7)
+    at Function.listen (/home/jimbo/gospy_redisapi/node_modules/express/lib/application.js:618:24)
+    at file:///home/jimbo/gospy_redisapi/server.js:33:5
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1512:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 8084
+}
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+node:events:491
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::8084
+    at Server.setupListenHandle [as _listen2] (node:net:1485:16)
+    at listenInCluster (node:net:1533:12)
+    at Server.listen (node:net:1621:7)
+    at Function.listen (/home/jimbo/gospy_redisapi/node_modules/express/lib/application.js:618:24)
+    at file:///home/jimbo/gospy_redisapi/server.js:33:5
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1512:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 8084
+}
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+node:events:491
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::8084
+    at Server.setupListenHandle [as _listen2] (node:net:1485:16)
+    at listenInCluster (node:net:1533:12)
+    at Server.listen (node:net:1621:7)
+    at Function.listen (/home/jimbo/gospy_redisapi/node_modules/express/lib/application.js:618:24)
+    at file:///home/jimbo/gospy_redisapi/server.js:33:5
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1512:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 8084
+}
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+file:///home/jimbo/gospy_redisapi/routers/command-router.js:34
+            st entry in the stream, to establish the range of milliseconds to request
+               ^^^^^
+
+SyntaxError: Unexpected identifier
+    at ESMLoader.moduleStrategy (node:internal/modules/esm/translators:119:18)
+    at ESMLoader.moduleProvider (node:internal/modules/esm/loader:468:14)
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+node:events:491
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::8084
+    at Server.setupListenHandle [as _listen2] (node:net:1485:16)
+    at listenInCluster (node:net:1533:12)
+    at Server.listen (node:net:1621:7)
+    at Function.listen (/home/jimbo/gospy_redisapi/node_modules/express/lib/application.js:618:24)
+    at file:///home/jimbo/gospy_redisapi/server.js:33:5
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1512:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 8084
+}
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+file:///home/jimbo/gospy_redisapi/routers/command-router.js:17
+    const results = await sub.xread("BLOCK", 0, "STREAMS", "user-stream", lastId);
+                    ^
+
+ReferenceError: sub is not defined
+    at listenForMessage (file:///home/jimbo/gospy_redisapi/routers/command-router.js:17:21)
+    at file:///home/jimbo/gospy_redisapi/routers/command-router.js:26:3
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+node:events:491
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::8084
+    at Server.setupListenHandle [as _listen2] (node:net:1485:16)
+    at listenInCluster (node:net:1533:12)
+    at Server.listen (node:net:1621:7)
+    at Function.listen (/home/jimbo/gospy_redisapi/node_modules/express/lib/application.js:618:24)
+    at file:///home/jimbo/gospy_redisapi/server.js:33:5
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1512:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 8084
+}
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+node:events:491
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::8084
+    at Server.setupListenHandle [as _listen2] (node:net:1485:16)
+    at listenInCluster (node:net:1533:12)
+    at Server.listen (node:net:1621:7)
+    at Function.listen (/home/jimbo/gospy_redisapi/node_modules/express/lib/application.js:618:24)
+    at file:///home/jimbo/gospy_redisapi/server.js:33:5
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1512:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 8084
+}
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+node:events:491
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::8084
+    at Server.setupListenHandle [as _listen2] (node:net:1485:16)
+    at listenInCluster (node:net:1533:12)
+    at Server.listen (node:net:1621:7)
+    at Function.listen (/home/jimbo/gospy_redisapi/node_modules/express/lib/application.js:618:24)
+    at file:///home/jimbo/gospy_redisapi/server.js:33:5
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1512:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 8084
+}
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+node:events:491
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::8084
+    at Server.setupListenHandle [as _listen2] (node:net:1485:16)
+    at listenInCluster (node:net:1533:12)
+    at Server.listen (node:net:1621:7)
+    at Function.listen (/home/jimbo/gospy_redisapi/node_modules/express/lib/application.js:618:24)
+    at file:///home/jimbo/gospy_redisapi/server.js:33:5
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1512:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 8084
+}
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+node:events:491
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::8084
+    at Server.setupListenHandle [as _listen2] (node:net:1485:16)
+    at listenInCluster (node:net:1533:12)
+    at Server.listen (node:net:1621:7)
+    at Function.listen (/home/jimbo/gospy_redisapi/node_modules/express/lib/application.js:618:24)
+    at file:///home/jimbo/gospy_redisapi/server.js:33:5
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1512:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 8084
+}
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+node:events:491
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::8084
+    at Server.setupListenHandle [as _listen2] (node:net:1485:16)
+    at listenInCluster (node:net:1533:12)
+    at Server.listen (node:net:1621:7)
+    at Function.listen (/home/jimbo/gospy_redisapi/node_modules/express/lib/application.js:618:24)
+    at file:///home/jimbo/gospy_redisapi/server.js:33:5
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1512:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 8084
+}
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+node:events:491
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::8084
+    at Server.setupListenHandle [as _listen2] (node:net:1485:16)
+    at listenInCluster (node:net:1533:12)
+    at Server.listen (node:net:1621:7)
+    at Function.listen (/home/jimbo/gospy_redisapi/node_modules/express/lib/application.js:618:24)
+    at file:///home/jimbo/gospy_redisapi/server.js:33:5
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1512:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 8084
+}
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+file:///home/jimbo/gospy_redisapi/routers/command-router.js:28
+    to: validDeviceRegistrationToken,
+        ^
+
+ReferenceError: validDeviceRegistrationToken is not defined
+    at file:///home/jimbo/gospy_redisapi/routers/command-router.js:28:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+node:events:491
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::8084
+    at Server.setupListenHandle [as _listen2] (node:net:1485:16)
+    at listenInCluster (node:net:1533:12)
+    at Server.listen (node:net:1621:7)
+    at Function.listen (/home/jimbo/gospy_redisapi/node_modules/express/lib/application.js:618:24)
+    at file:///home/jimbo/gospy_redisapi/server.js:33:5
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1512:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 8084
+}
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+node:events:491
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::8084
+    at Server.setupListenHandle [as _listen2] (node:net:1485:16)
+    at listenInCluster (node:net:1533:12)
+    at Server.listen (node:net:1621:7)
+    at Function.listen (/home/jimbo/gospy_redisapi/node_modules/express/lib/application.js:618:24)
+    at file:///home/jimbo/gospy_redisapi/server.js:33:5
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1512:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 8084
+}
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+node:events:491
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::8084
+    at Server.setupListenHandle [as _listen2] (node:net:1485:16)
+    at listenInCluster (node:net:1533:12)
+    at Server.listen (node:net:1621:7)
+    at Function.listen (/home/jimbo/gospy_redisapi/node_modules/express/lib/application.js:618:24)
+    at file:///home/jimbo/gospy_redisapi/server.js:33:5
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1512:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 8084
+}
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+file:///home/jimbo/gospy_redisapi/routers/command-router.js:52
+                to: person.,
+                           ^
+
+SyntaxError: Unexpected token ','
+    at ESMLoader.moduleStrategy (node:internal/modules/esm/translators:119:18)
+    at ESMLoader.moduleProvider (node:internal/modules/esm/loader:468:14)
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+node:events:491
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::8084
+    at Server.setupListenHandle [as _listen2] (node:net:1485:16)
+    at listenInCluster (node:net:1533:12)
+    at Server.listen (node:net:1621:7)
+    at Function.listen (/home/jimbo/gospy_redisapi/node_modules/express/lib/application.js:618:24)
+    at file:///home/jimbo/gospy_redisapi/server.js:33:5
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1512:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 8084
+}
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+node:events:491
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::8084
+    at Server.setupListenHandle [as _listen2] (node:net:1485:16)
+    at listenInCluster (node:net:1533:12)
+    at Server.listen (node:net:1621:7)
+    at Function.listen (/home/jimbo/gospy_redisapi/node_modules/express/lib/application.js:618:24)
+    at file:///home/jimbo/gospy_redisapi/server.js:33:5
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1512:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 8084
+}
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+node:events:491
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::8084
+    at Server.setupListenHandle [as _listen2] (node:net:1485:16)
+    at listenInCluster (node:net:1533:12)
+    at Server.listen (node:net:1621:7)
+    at Function.listen (/home/jimbo/gospy_redisapi/node_modules/express/lib/application.js:618:24)
+    at file:///home/jimbo/gospy_redisapi/server.js:33:5
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1512:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 8084
+}
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+node:events:491
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::8084
+    at Server.setupListenHandle [as _listen2] (node:net:1485:16)
+    at listenInCluster (node:net:1533:12)
+    at Server.listen (node:net:1621:7)
+    at Function.listen (/home/jimbo/gospy_redisapi/node_modules/express/lib/application.js:618:24)
+    at file:///home/jimbo/gospy_redisapi/server.js:33:5
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1512:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 8084
+}
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+node:events:491
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::8084
+    at Server.setupListenHandle [as _listen2] (node:net:1485:16)
+    at listenInCluster (node:net:1533:12)
+    at Server.listen (node:net:1621:7)
+    at Function.listen (/home/jimbo/gospy_redisapi/node_modules/express/lib/application.js:618:24)
+    at file:///home/jimbo/gospy_redisapi/server.js:33:5
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1512:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 8084
+}
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+file:///home/jimbo/gospy_redisapi/routers/command-router.js:21
+    const results = await sub.xread("BLOCK", 5000, "STREAMS", keyName, lastId); // block for 5 seconds
+                    ^
+
+ReferenceError: sub is not defined
+    at listenForMessage (file:///home/jimbo/gospy_redisapi/routers/command-router.js:21:21)
+    at file:///home/jimbo/gospy_redisapi/routers/command-router.js:56:13
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+node:events:491
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::8084
+    at Server.setupListenHandle [as _listen2] (node:net:1485:16)
+    at listenInCluster (node:net:1533:12)
+    at Server.listen (node:net:1621:7)
+    at Function.listen (/home/jimbo/gospy_redisapi/node_modules/express/lib/application.js:618:24)
+    at file:///home/jimbo/gospy_redisapi/server.js:33:5
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1512:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 8084
+}
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+node:events:491
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::8084
+    at Server.setupListenHandle [as _listen2] (node:net:1485:16)
+    at listenInCluster (node:net:1533:12)
+    at Server.listen (node:net:1621:7)
+    at Function.listen (/home/jimbo/gospy_redisapi/node_modules/express/lib/application.js:618:24)
+    at file:///home/jimbo/gospy_redisapi/server.js:33:5
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1512:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 8084
+}
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+file:///home/jimbo/gospy_redisapi/routers/command-router.js:22
+    if()
+       ^
+
+SyntaxError: Unexpected token ')'
+    at ESMLoader.moduleStrategy (node:internal/modules/esm/translators:119:18)
+    at ESMLoader.moduleProvider (node:internal/modules/esm/loader:468:14)
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+file:///home/jimbo/gospy_redisapi/routers/command-router.js:22
+    if(results ==)
+                 ^
+
+SyntaxError: Unexpected token ')'
+    at ESMLoader.moduleStrategy (node:internal/modules/esm/translators:119:18)
+    at ESMLoader.moduleProvider (node:internal/modules/esm/loader:468:14)
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+file:///home/jimbo/gospy_redisapi/routers/command-router.js:23
+    const [key, messages] = results[0]; // `key` equals to "user-stream"
+    ^^^^^
+
+SyntaxError: Unexpected token 'const'
+    at ESMLoader.moduleStrategy (node:internal/modules/esm/translators:119:18)
+    at ESMLoader.moduleProvider (node:internal/modules/esm/loader:468:14)
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+file:///home/jimbo/gospy_redisapi/routers/command-router.js:23
+    const [key, messages] = results[0]; // `key` equals to "user-stream"
+    ^^^^^
+
+SyntaxError: Unexpected token 'const'
+    at ESMLoader.moduleStrategy (node:internal/modules/esm/translators:119:18)
+    at ESMLoader.moduleProvider (node:internal/modules/esm/loader:468:14)
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+file:///home/jimbo/gospy_redisapi/routers/command-router.js:82
+
+
+
+SyntaxError: Unexpected end of input
+    at ESMLoader.moduleStrategy (node:internal/modules/esm/translators:119:18)
+    at ESMLoader.moduleProvider (node:internal/modules/esm/loader:468:14)
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+node:events:491
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::8084
+    at Server.setupListenHandle [as _listen2] (node:net:1485:16)
+    at listenInCluster (node:net:1533:12)
+    at Server.listen (node:net:1621:7)
+    at Function.listen (/home/jimbo/gospy_redisapi/node_modules/express/lib/application.js:618:24)
+    at file:///home/jimbo/gospy_redisapi/server.js:33:5
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1512:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 8084
+}
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+node:events:491
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::8084
+    at Server.setupListenHandle [as _listen2] (node:net:1485:16)
+    at listenInCluster (node:net:1533:12)
+    at Server.listen (node:net:1621:7)
+    at Function.listen (/home/jimbo/gospy_redisapi/node_modules/express/lib/application.js:618:24)
+    at file:///home/jimbo/gospy_redisapi/server.js:33:5
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1512:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 8084
+}
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+node:events:491
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::8084
+    at Server.setupListenHandle [as _listen2] (node:net:1485:16)
+    at listenInCluster (node:net:1533:12)
+    at Server.listen (node:net:1621:7)
+    at Function.listen (/home/jimbo/gospy_redisapi/node_modules/express/lib/application.js:618:24)
+    at file:///home/jimbo/gospy_redisapi/server.js:33:5
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1512:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 8084
+}
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+node:events:491
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::8084
+    at Server.setupListenHandle [as _listen2] (node:net:1485:16)
+    at listenInCluster (node:net:1533:12)
+    at Server.listen (node:net:1621:7)
+    at Function.listen (/home/jimbo/gospy_redisapi/node_modules/express/lib/application.js:618:24)
+    at file:///home/jimbo/gospy_redisapi/server.js:33:5
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1512:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 8084
+}
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+node:events:491
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::8084
+    at Server.setupListenHandle [as _listen2] (node:net:1485:16)
+    at listenInCluster (node:net:1533:12)
+    at Server.listen (node:net:1621:7)
+    at Function.listen (/home/jimbo/gospy_redisapi/node_modules/express/lib/application.js:618:24)
+    at file:///home/jimbo/gospy_redisapi/server.js:33:5
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1512:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 8084
+}
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+file:///home/jimbo/gospy_redisapi/routers/command-router.js:63
+                    {url}: 'news'
+                    ^
+
+SyntaxError: Unexpected token '{'
+    at ESMLoader.moduleStrategy (node:internal/modules/esm/translators:119:18)
+    at ESMLoader.moduleProvider (node:internal/modules/esm/loader:468:14)
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+file:///home/jimbo/gospy_redisapi/routers/command-router.js:63
+                    '{url}: 'news'
+                             ^^^^
+
+SyntaxError: Unexpected identifier
+    at ESMLoader.moduleStrategy (node:internal/modules/esm/translators:119:18)
+    at ESMLoader.moduleProvider (node:internal/modules/esm/loader:468:14)
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+file:///home/jimbo/gospy_redisapi/routers/command-router.js:63
+                    '{commandurl}: 'news'
+                                    ^^^^
+
+SyntaxError: Unexpected identifier
+    at ESMLoader.moduleStrategy (node:internal/modules/esm/translators:119:18)
+    at ESMLoader.moduleProvider (node:internal/modules/esm/loader:468:14)
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+file:///home/jimbo/gospy_redisapi/routers/command-router.js:63
+                    '{command}: 'news'
+                                 ^^^^
+
+SyntaxError: Unexpected identifier
+    at ESMLoader.moduleStrategy (node:internal/modules/esm/translators:119:18)
+    at ESMLoader.moduleProvider (node:internal/modules/esm/loader:468:14)
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+file:///home/jimbo/gospy_redisapi/routers/command-router.js:63
+                    '{command}`: 'news'
+                                  ^^^^
+
+SyntaxError: Unexpected identifier
+    at ESMLoader.moduleStrategy (node:internal/modules/esm/translators:119:18)
+    at ESMLoader.moduleProvider (node:internal/modules/esm/loader:468:14)
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+file:///home/jimbo/gospy_redisapi/routers/command-router.js:63
+                    `{command}`: 'news'
+                    ^^^^^^^^^^^
+
+SyntaxError: Unexpected template string
+    at ESMLoader.moduleStrategy (node:internal/modules/esm/translators:119:18)
+    at ESMLoader.moduleProvider (node:internal/modules/esm/loader:468:14)
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+file:///home/jimbo/gospy_redisapi/routers/command-router.js:63
+                    `{command}`: ''
+                    ^^^^^^^^^^^
+
+SyntaxError: Unexpected template string
+    at ESMLoader.moduleStrategy (node:internal/modules/esm/translators:119:18)
+    at ESMLoader.moduleProvider (node:internal/modules/esm/loader:468:14)
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+file:///home/jimbo/gospy_redisapi/routers/command-router.js:63
+                    {command}`: ''
+                    ^
+
+SyntaxError: Unexpected token '{'
+    at ESMLoader.moduleStrategy (node:internal/modules/esm/translators:119:18)
+    at ESMLoader.moduleProvider (node:internal/modules/esm/loader:468:14)
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+(node:26690) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 exit listeners added to [Bus]. Use emitter.setMaxListeners() to increase limit
+file:///home/jimbo/gospy_redisapi/routers/command-router.js:63
+                    {command}: ''
+                    ^
+
+SyntaxError: Unexpected token '{'
+    at ESMLoader.moduleStrategy (node:internal/modules/esm/translators:119:18)
+    at ESMLoader.moduleProvider (node:internal/modules/esm/loader:468:14)
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+file:///home/jimbo/gospy_redisapi/routers/command-router.js:63
+                    command}: ''
+                            ^
+
+SyntaxError: Unexpected token ':'
+    at ESMLoader.moduleStrategy (node:internal/modules/esm/translators:119:18)
+    at ESMLoader.moduleProvider (node:internal/modules/esm/loader:468:14)
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+node:events:491
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::8084
+    at Server.setupListenHandle [as _listen2] (node:net:1485:16)
+    at listenInCluster (node:net:1533:12)
+    at Server.listen (node:net:1621:7)
+    at Function.listen (/home/jimbo/gospy_redisapi/node_modules/express/lib/application.js:618:24)
+    at file:///home/jimbo/gospy_redisapi/server.js:33:5
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1512:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 8084
+}
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+node:events:491
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::8084
+    at Server.setupListenHandle [as _listen2] (node:net:1485:16)
+    at listenInCluster (node:net:1533:12)
+    at Server.listen (node:net:1621:7)
+    at Function.listen (/home/jimbo/gospy_redisapi/node_modules/express/lib/application.js:618:24)
+    at file:///home/jimbo/gospy_redisapi/server.js:33:5
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1512:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 8084
+}
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+
+__________________________________
+	sendOK
+----------------------------------
+err=null
+res={"multicast_id":615205285640763329,"success":1,"failure":0,"canonical_ids":0,"results":[{"message_id":"0:1672839258585383%7f2dca4b7f2dca4b"}]}
+----------------------------------
+>>>
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+node:events:491
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::8084
+    at Server.setupListenHandle [as _listen2] (node:net:1485:16)
+    at listenInCluster (node:net:1533:12)
+    at Server.listen (node:net:1621:7)
+    at Function.listen (/home/jimbo/gospy_redisapi/node_modules/express/lib/application.js:618:24)
+    at file:///home/jimbo/gospy_redisapi/server.js:33:5
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1512:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 8084
+}
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+
+__________________________________
+	sendOK
+----------------------------------
+err=null
+res={"multicast_id":1667166564489870868,"success":1,"failure":0,"canonical_ids":0,"results":[{"message_id":"0:1672840051433892%7f2dca4bf9fd7ecd"}]}
+----------------------------------
+>>>
+
+__________________________________
+	sendOK
+----------------------------------
+err=null
+res={"multicast_id":6218116495974706092,"success":1,"failure":0,"canonical_ids":0,"results":[{"message_id":"0:1672840104441612%7f2dca4bf9fd7ecd"}]}
+----------------------------------
+>>>
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+node:events:491
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::8084
+    at Server.setupListenHandle [as _listen2] (node:net:1485:16)
+    at listenInCluster (node:net:1533:12)
+    at Server.listen (node:net:1621:7)
+    at Function.listen (/home/jimbo/gospy_redisapi/node_modules/express/lib/application.js:618:24)
+    at file:///home/jimbo/gospy_redisapi/server.js:33:5
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1512:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 8084
+}
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+node:events:491
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::8084
+    at Server.setupListenHandle [as _listen2] (node:net:1485:16)
+    at listenInCluster (node:net:1533:12)
+    at Server.listen (node:net:1621:7)
+    at Function.listen (/home/jimbo/gospy_redisapi/node_modules/express/lib/application.js:618:24)
+    at file:///home/jimbo/gospy_redisapi/server.js:33:5
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1512:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 8084
+}
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+file:///home/jimbo/gospy_redisapi/routers/command-router.js:62
+            var payload = {
+            ^^^
+
+SyntaxError: Unexpected token 'var'
+    at ESMLoader.moduleStrategy (node:internal/modules/esm/translators:119:18)
+    at ESMLoader.moduleProvider (node:internal/modules/esm/loader:468:14)
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+file:///home/jimbo/gospy_redisapi/routers/command-router.js:62
+            var payload = {
+            ^^^
+
+SyntaxError: Unexpected token 'var'
+    at ESMLoader.moduleStrategy (node:internal/modules/esm/translators:119:18)
+    at ESMLoader.moduleProvider (node:internal/modules/esm/loader:468:14)
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+file:///home/jimbo/gospy_redisapi/routers/command-router.js:62
+            var payload = {
+            ^^^
+
+SyntaxError: Unexpected token 'var'
+    at ESMLoader.moduleStrategy (node:internal/modules/esm/translators:119:18)
+    at ESMLoader.moduleProvider (node:internal/modules/esm/loader:468:14)
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+node:events:491
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::8084
+    at Server.setupListenHandle [as _listen2] (node:net:1485:16)
+    at listenInCluster (node:net:1533:12)
+    at Server.listen (node:net:1621:7)
+    at Function.listen (/home/jimbo/gospy_redisapi/node_modules/express/lib/application.js:618:24)
+    at file:///home/jimbo/gospy_redisapi/server.js:33:5
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1512:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 8084
+}
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+node:events:491
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::8084
+    at Server.setupListenHandle [as _listen2] (node:net:1485:16)
+    at listenInCluster (node:net:1533:12)
+    at Server.listen (node:net:1621:7)
+    at Function.listen (/home/jimbo/gospy_redisapi/node_modules/express/lib/application.js:618:24)
+    at file:///home/jimbo/gospy_redisapi/server.js:33:5
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1512:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 8084
+}
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+file:///home/jimbo/gospy_redisapi/routers/command-router.js:65
+                    ${command : ''
+                     ^
+
+SyntaxError: Unexpected token '{'
+    at ESMLoader.moduleStrategy (node:internal/modules/esm/translators:119:18)
+    at ESMLoader.moduleProvider (node:internal/modules/esm/loader:468:14)
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+file:///home/jimbo/gospy_redisapi/routers/command-router.js:65
+                    ${command} : ''
+                     ^
+
+SyntaxError: Unexpected token '{'
+    at ESMLoader.moduleStrategy (node:internal/modules/esm/translators:119:18)
+    at ESMLoader.moduleProvider (node:internal/modules/esm/loader:468:14)
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+file:///home/jimbo/gospy_redisapi/routers/command-router.js:65
+                    `${command} : ''
+                    ^^^
+
+SyntaxError: Unexpected template string
+    at ESMLoader.moduleStrategy (node:internal/modules/esm/translators:119:18)
+    at ESMLoader.moduleProvider (node:internal/modules/esm/loader:468:14)
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+file:///home/jimbo/gospy_redisapi/routers/command-router.js:65
+                    `${command}` : ''
+                    ^^^
+
+SyntaxError: Unexpected template string
+    at ESMLoader.moduleStrategy (node:internal/modules/esm/translators:119:18)
+    at ESMLoader.moduleProvider (node:internal/modules/esm/loader:468:14)
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+file:///home/jimbo/gospy_redisapi/routers/command-router.js:59
+            const dataToSend = {`${command}` : '' }
+                                ^^^
+
+SyntaxError: Unexpected template string
+    at ESMLoader.moduleStrategy (node:internal/modules/esm/translators:119:18)
+    at ESMLoader.moduleProvider (node:internal/modules/esm/loader:468:14)
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+file:///home/jimbo/gospy_redisapi/routers/command-router.js:59
+            const dataToSend = {`${command}`  '' }
+                                ^^^
+
+SyntaxError: Unexpected template string
+    at ESMLoader.moduleStrategy (node:internal/modules/esm/translators:119:18)
+    at ESMLoader.moduleProvider (node:internal/modules/esm/loader:468:14)
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+file:///home/jimbo/gospy_redisapi/routers/command-router.js:59
+            const dataToSend = {`${command}` , '' }
+                                ^^^
+
+SyntaxError: Unexpected template string
+    at ESMLoader.moduleStrategy (node:internal/modules/esm/translators:119:18)
+    at ESMLoader.moduleProvider (node:internal/modules/esm/loader:468:14)
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+file:///home/jimbo/gospy_redisapi/routers/command-router.js:59
+            const dataToSend = {`command}` , '' }
+                                ^^^^^^^^^^
+
+SyntaxError: Unexpected template string
+    at ESMLoader.moduleStrategy (node:internal/modules/esm/translators:119:18)
+    at ESMLoader.moduleProvider (node:internal/modules/esm/loader:468:14)
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+file:///home/jimbo/gospy_redisapi/routers/command-router.js:65
+                    `${command}` : ''
+                     ^
+
+SyntaxError: Unexpected identifier
+    at ESMLoader.moduleStrategy (node:internal/modules/esm/translators:119:18)
+    at ESMLoader.moduleProvider (node:internal/modules/esm/loader:468:14)
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+(node:26690) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 exit listeners added to [Bus]. Use emitter.setMaxListeners() to increase limit
+file:///home/jimbo/gospy_redisapi/routers/command-router.js:59
+            const dataToSend = {command , '' }
+                                          ^^
+
+SyntaxError: Unexpected string
+    at ESMLoader.moduleStrategy (node:internal/modules/esm/translators:119:18)
+    at ESMLoader.moduleProvider (node:internal/modules/esm/loader:468:14)
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+file:///home/jimbo/gospy_redisapi/routers/command-router.js:59
+            const dataToSend = {command , '' }
+                                          ^^
+
+SyntaxError: Unexpected string
+    at ESMLoader.moduleStrategy (node:internal/modules/esm/translators:119:18)
+    at ESMLoader.moduleProvider (node:internal/modules/esm/loader:468:14)
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+file:///home/jimbo/gospy_redisapi/routers/command-router.js:59
+            const dataToSend = {command , '' }
+                                          ^^
+
+SyntaxError: Unexpected string
+    at ESMLoader.moduleStrategy (node:internal/modules/esm/translators:119:18)
+    at ESMLoader.moduleProvider (node:internal/modules/esm/loader:468:14)
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+file:///home/jimbo/gospy_redisapi/routers/command-router.js:59
+            const dataToSend = {[command , '' }
+                                         ^
+
+SyntaxError: Unexpected token ','
+    at ESMLoader.moduleStrategy (node:internal/modules/esm/translators:119:18)
+    at ESMLoader.moduleProvider (node:internal/modules/esm/loader:468:14)
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+file:///home/jimbo/gospy_redisapi/routers/command-router.js:59
+            const dataToSend = {[command] }
+                                        ^
+
+SyntaxError: Unexpected token '['
+    at ESMLoader.moduleStrategy (node:internal/modules/esm/translators:119:18)
+    at ESMLoader.moduleProvider (node:internal/modules/esm/loader:468:14)
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+file:///home/jimbo/gospy_redisapi/routers/command-router.js:59
+            const dataToSend = {[command]}
+                                        ^
+
+SyntaxError: Unexpected token '['
+    at ESMLoader.moduleStrategy (node:internal/modules/esm/translators:119:18)
+    at ESMLoader.moduleProvider (node:internal/modules/esm/loader:468:14)
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+file:///home/jimbo/gospy_redisapi/routers/command-router.js:59
+            const dataToSend = {[command]};
+                                        ^
+
+SyntaxError: Unexpected token '['
+    at ESMLoader.moduleStrategy (node:internal/modules/esm/translators:119:18)
+    at ESMLoader.moduleProvider (node:internal/modules/esm/loader:468:14)
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+file:///home/jimbo/gospy_redisapi/routers/command-router.js:59
+            const dataToSend = {[command};
+                                        ^
+
+SyntaxError: Unexpected token '}'
+    at ESMLoader.moduleStrategy (node:internal/modules/esm/translators:119:18)
+    at ESMLoader.moduleProvider (node:internal/modules/esm/loader:468:14)
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+node:events:491
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::8084
+    at Server.setupListenHandle [as _listen2] (node:net:1485:16)
+    at listenInCluster (node:net:1533:12)
+    at Server.listen (node:net:1621:7)
+    at Function.listen (/home/jimbo/gospy_redisapi/node_modules/express/lib/application.js:618:24)
+    at file:///home/jimbo/gospy_redisapi/server.js:33:5
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1512:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 8084
+}
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+node:events:491
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::8084
+    at Server.setupListenHandle [as _listen2] (node:net:1485:16)
+    at listenInCluster (node:net:1533:12)
+    at Server.listen (node:net:1621:7)
+    at Function.listen (/home/jimbo/gospy_redisapi/node_modules/express/lib/application.js:618:24)
+    at file:///home/jimbo/gospy_redisapi/server.js:33:5
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1512:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 8084
+}
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+node:events:491
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::8084
+    at Server.setupListenHandle [as _listen2] (node:net:1485:16)
+    at listenInCluster (node:net:1533:12)
+    at Server.listen (node:net:1621:7)
+    at Function.listen (/home/jimbo/gospy_redisapi/node_modules/express/lib/application.js:618:24)
+    at file:///home/jimbo/gospy_redisapi/server.js:33:5
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1512:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 8084
+}
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+node:events:491
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::8084
+    at Server.setupListenHandle [as _listen2] (node:net:1485:16)
+    at listenInCluster (node:net:1533:12)
+    at Server.listen (node:net:1621:7)
+    at Function.listen (/home/jimbo/gospy_redisapi/node_modules/express/lib/application.js:618:24)
+    at file:///home/jimbo/gospy_redisapi/server.js:33:5
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1512:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 8084
+}
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+file:///home/jimbo/gospy_redisapi/routers/command-router.js:58
+            if ()
+                ^
+
+SyntaxError: Unexpected token ')'
+    at ESMLoader.moduleStrategy (node:internal/modules/esm/translators:119:18)
+    at ESMLoader.moduleProvider (node:internal/modules/esm/loader:468:14)
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+file:///home/jimbo/gospy_redisapi/routers/command-router.js:59
+            const dataToSend = {command};
+            ^^^^^
+
+SyntaxError: Unexpected token 'const'
+    at ESMLoader.moduleStrategy (node:internal/modules/esm/translators:119:18)
+    at ESMLoader.moduleProvider (node:internal/modules/esm/loader:468:14)
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+file:///home/jimbo/gospy_redisapi/routers/command-router.js:58
+            if (command == ""TRIGGER_LU"")
+                             ^^^^^^^^^^
+
+SyntaxError: Unexpected identifier
+    at ESMLoader.moduleStrategy (node:internal/modules/esm/translators:119:18)
+    at ESMLoader.moduleProvider (node:internal/modules/esm/loader:468:14)
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+file:///home/jimbo/gospy_redisapi/routers/command-router.js:58
+            if (command == ""TRIGGER_LU")
+                             ^^^^^^^^^^
+
+SyntaxError: Unexpected identifier
+    at ESMLoader.moduleStrategy (node:internal/modules/esm/translators:119:18)
+    at ESMLoader.moduleProvider (node:internal/modules/esm/loader:468:14)
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+file:///home/jimbo/gospy_redisapi/routers/command-router.js:59
+            const dataToSend = {command};
+            ^^^^^
+
+SyntaxError: Unexpected token 'const'
+    at ESMLoader.moduleStrategy (node:internal/modules/esm/translators:119:18)
+    at ESMLoader.moduleProvider (node:internal/modules/esm/loader:468:14)
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+file:///home/jimbo/gospy_redisapi/routers/command-router.js:60
+            const dataToSend = {command};
+            ^^^^^
+
+SyntaxError: Unexpected token 'const'
+    at ESMLoader.moduleStrategy (node:internal/modules/esm/translators:119:18)
+    at ESMLoader.moduleProvider (node:internal/modules/esm/loader:468:14)
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+(node:26690) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 exit listeners added to [Bus]. Use emitter.setMaxListeners() to increase limit
+file:///home/jimbo/gospy_redisapi/routers/command-router.js:58
+            let 
+            ^^^
+
+SyntaxError: Unexpected strict mode reserved word
+    at ESMLoader.moduleStrategy (node:internal/modules/esm/translators:119:18)
+    at ESMLoader.moduleProvider (node:internal/modules/esm/loader:468:14)
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+file:///home/jimbo/gospy_redisapi/routers/command-router.js:60
+            const dataToSend = {command};
+            ^^^^^
+
+SyntaxError: Unexpected token 'const'
+    at ESMLoader.moduleStrategy (node:internal/modules/esm/translators:119:18)
+    at ESMLoader.moduleProvider (node:internal/modules/esm/loader:468:14)
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+file:///home/jimbo/gospy_redisapi/routers/command-router.js:60
+            const dataToSend = {command};
+            ^^^^^
+
+SyntaxError: Unexpected token 'const'
+    at ESMLoader.moduleStrategy (node:internal/modules/esm/translators:119:18)
+    at ESMLoader.moduleProvider (node:internal/modules/esm/loader:468:14)
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+file:///home/jimbo/gospy_redisapi/routers/command-router.js:59
+            if (command == "TRIGGER_LU")
+            ^^
+
+SyntaxError: Unexpected token 'if'
+    at ESMLoader.moduleStrategy (node:internal/modules/esm/translators:119:18)
+    at ESMLoader.moduleProvider (node:internal/modules/esm/loader:468:14)
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+file:///home/jimbo/gospy_redisapi/routers/command-router.js:58
+            let dataToSend = {""}
+                              ^^
+
+SyntaxError: Unexpected string
+    at ESMLoader.moduleStrategy (node:internal/modules/esm/translators:119:18)
+    at ESMLoader.moduleProvider (node:internal/modules/esm/loader:468:14)
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+file:///home/jimbo/gospy_redisapi/routers/command-router.js:58
+            let dataToSend = {""}
+                              ^^
+
+SyntaxError: Unexpected string
+    at ESMLoader.moduleStrategy (node:internal/modules/esm/translators:119:18)
+    at ESMLoader.moduleProvider (node:internal/modules/esm/loader:468:14)
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+file:///home/jimbo/gospy_redisapi/routers/command-router.js:58
+            let dataToSend = {""}
+                              ^^
+
+SyntaxError: Unexpected string
+    at ESMLoader.moduleStrategy (node:internal/modules/esm/translators:119:18)
+    at ESMLoader.moduleProvider (node:internal/modules/esm/loader:468:14)
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+file:///home/jimbo/gospy_redisapi/routers/command-router.js:58
+            let dataToSend = {""}
+                              ^^
+
+SyntaxError: Unexpected string
+    at ESMLoader.moduleStrategy (node:internal/modules/esm/translators:119:18)
+    at ESMLoader.moduleProvider (node:internal/modules/esm/loader:468:14)
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[32m[nodemon] restarting due to changes...[39m

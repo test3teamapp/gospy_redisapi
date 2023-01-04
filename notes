@@ -1,0 +1,3 @@
+nohup 2>&1 npm start </dev/null &
+
+

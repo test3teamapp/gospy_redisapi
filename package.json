@@ -16,6 +16,7 @@
   "dependencies": {
     "dotenv": "^16.0.0",
     "express": "^4.17.3",
+    "fcm-node": "^1.6.1",
     "ioredis": "^5.2.4",
     "redis": "^4.0.4",
     "redis-om": "^0.2.0",
