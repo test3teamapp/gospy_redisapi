@@ -1,39 +1,45 @@
 import { Router } from 'express'
 import { personRepository } from '../om/person.js'
-import { connection } from '../om/redisDB_client.js'
+import { default as redisClient } from '../om/redisDB_client.js'
+import { meetingsGraph } from '../om/redisGraph_client.js'
 
 export const router = Router()
 
-router.patch('/byID/:id/location/:lat:lng', async (req, res) => {
+async function updateGraph(personName, ){
+
+}
+
+router.patch('/byID/:id/location/:lat,:lng', async (req, res) => {
 
   const id = req.params.id
-  const longitude = Number(req.params.lng)
-  const latitude = Number(req.params.lat)
+  //console.log(`req.params.lng : ${req.params.lng} , req.params.lat : ${req.params.lat}`)
+  const lng = Number(req.params.lng)
+  const lat = Number(req.params.lat)
 
   const locationUpdated = new Date()
 
   const person = await personRepository.fetch(id)
 
-  if (person.id == null) {
+  if (person.name == null) {
     res.send({ "ERROR" : `NO PERSON FOUND BY ID: ${id}` })
   } else {
-    person.location = { longitude, latitude }
+    person.location = { longitude: lng, latitude: lat }
     person.locationUpdated = locationUpdated
     await personRepository.save(person)
+    const id = person.entityId
 
     let keyName = `${person.keyName}:locationHistory`
-    await connection.xAdd(keyName, '*', person.location)
+    await redisClient.xAdd(keyName, '*', {longitude: lng.toString(), latitude: lat.toString()});
 
-
-    res.send({ id, locationUpdated, location: { longitude, latitude } })
+    res.send({ id, locationUpdated, location: { lng, lat } })
   }
 })
 
 router.patch('/byName/:name/location/:lng,:lat', async (req, res) => {
 
   const name = req.params.name
-  const longitude = Number(req.params.lng)
-  const latitude = Number(req.params.lat)
+  const lng = Number(req.params.lng)
+  const lat= Number(req.params.lat)
 
   const locationUpdated = new Date()
 
@@ -41,24 +47,35 @@ router.patch('/byName/:name/location/:lng,:lat', async (req, res) => {
 
   if (person == null) {
     //res.send({ "ERROR" : `NO PERSON FOUND BY NAME: ${name}` })
+    // CREATE NEW
     const person = new Object()
     person.name = name
-    person.location = { longitude, latitude }
+    person.location = { longitude:lng, latitude:lat }
     person.locationUpdated = locationUpdated
     const savedPerson = await personRepository.createAndSave(person)
-    const id = savedPerson.id
-    res.send({ id, name, locationUpdated, location: { longitude, latitude } })
+    const id = savedPerson.entityId;
+
+    let keyName = `${savedPerson.keyName}:locationHistory`
+    await redisClient.xAdd(keyName, '*', {longitude: lng.toString(), latitude: lat.toString()});
+
+    res.send({ id, name, locationUpdated, location: { lng, lat } })
     
   } else {
-    const id = person.id
-    person.location = { longitude, latitude }
+    const id = person.entityId
+    person.location = { longitude:lng, latitude:lat }
     person.locationUpdated = locationUpdated
     await personRepository.save(person)
 
     let keyName = `${person.keyName}:locationHistory`
-    await connection.xAdd(keyName, '*', person.location)
+    
+    await redisClient.xAdd(keyName, '*', {longitude: lng.toString(), latitude: lat.toString()});
+
+    // GRAPH DATA
+    // check if any other device/person is in the vicinity
 
 
-    res.send({ id, name, locationUpdated, location: { longitude, latitude } })
+    //updateGraph();
+
+    res.send({ id, name, locationUpdated, location: { lng, lat } })
   }
 })

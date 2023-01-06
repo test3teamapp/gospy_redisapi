@@ -1,5 +1,5 @@
 import { Entity, Schema } from 'redis-om'
-import client from './redisDB_client.js'
+import { default as redisOMClient } from './redisOM_client.js'
 
 /* our entity */
 class Person extends Entity {}
@@ -13,7 +13,7 @@ const personSchema = new Schema(Person, {
   })
 
   /* use the client to create a Repository just for Persons */
-export const personRepository = client.fetchRepository(personSchema)
+export const personRepository = redisOMClient.fetchRepository(personSchema)
 
 /* create the index for Person */
 await personRepository.createIndex()
