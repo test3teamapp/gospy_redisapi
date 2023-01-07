@@ -72,8 +72,14 @@ router.patch('/byName/:name/location/:lng,:lat', async (req, res) => {
 
     // GRAPH DATA
     // check if any other device/person is in the vicinity
+    const nearbyPeople = await personRepository.search()
+      .where('location').inRadius(
+        circle => circle.origin(lng, lat).radius(100).meters)
+      .and('locationUpdated').between(Date.now() - (30 * 30000), locationUpdated).return.all()
 
-
+    nearbyPeople.forEach( person => {
+      console.log(person.name);
+    });
     //updateGraph();
 
     res.send({ id, name, locationUpdated, location: { lng, lat } })
