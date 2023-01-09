@@ -57,7 +57,7 @@ async function updateGraph(meetingMembers, meetingDate) {
 
   meetingNames.forEach(async element => {
     console.log(` name in meetings names : ${element} `)
-    graphResult = await meetingsGraph.roQuery(
+    graphResult = await meetingsGraph.query(
       'MATCH (p:Person { name: $name }) RETURN p.name AS name',
       {
         params: {
@@ -92,8 +92,6 @@ async function updateGraph(meetingMembers, meetingDate) {
     console.log("Aggregate meeting @ " + JSON.stringify(resultGEO[0]));
     // use the address of an existing meeting place in the area
     meetingAddress = resultGEO[0];
-    //meetingLocation.lng = resultGEO[0][2][0]
-    //meetingLocation.lat = resultGEO[0][2][1]
   }
   // check for existing places in Graph
 
@@ -127,13 +125,13 @@ async function updateGraph(meetingMembers, meetingDate) {
 
 
   // check if there are any other meetings taking place in the area already
-  const timestampNow = Date.now();
+  let timestampNow = Date.now();
   const timestamp1HourAgo = timestampNow - (60 * 60000); // past hour
 
   graphResult = await meetingsGraph.roQuery(
     'MATCH (m:Meeting) , (p:Place {name: $name}) \
-  WHERE (m)-[:AT_PLACE]-> (p) \
-  AND m:date < $tnow AND m:date > $tPastHour return (m)',
+  WHERE (m)-[:AT_PLACE]->(p) \
+  AND m.date < $tnow AND m.date > $tPastHour RETURN m ORDER BY m.date DESC',
     {
       params: {
         name: meetingAddress,
@@ -162,7 +160,9 @@ async function updateGraph(meetingMembers, meetingDate) {
   }else {
     // move date of meeting to current date, leave string date to original (first time we created the meeting )
     // more people showing up within the hour, we extend the presence of the meeting.
-    // TODO
+    // get the first one returned (most recent)
+    timestampNow = Number.parseInt(graphResult.data[0].m.properties.date);
+    console.log(` joining meeting that started @ ${graphResult.data[0].m.properties.stringDate}`)
   }
   
 
@@ -171,8 +171,8 @@ async function updateGraph(meetingMembers, meetingDate) {
   await meetingsGraph.query(
     'UNWIND $arrayOfNames as person_name \
     MATCH (m:Meeting { date: $date}), (p:Place {name:  $name}) \
-    WHERE (m)-[:AT_PLACE]-> (p) \
-    MERGE (person {name: person_name})-[:PART_OF]->(m)',
+    WHERE (m)-[:AT_PLACE]->(p) \
+    MERGE (:Person {name: person_name})-[:PART_OF]->(m)',
     {
       params: {
         arrayOfNames: meetingNames,
