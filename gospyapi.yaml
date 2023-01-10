@@ -246,6 +246,21 @@ paths:
                 allOf:
                   - $ref: "#/components/schemas/person_name"
                   - $ref: "#/components/schemas/person_location"
+
+  /graph/latest/byName/{name}/hours/{hours}:
+    get:
+      tags: 
+        - Graph
+      description: Get graph for person latest meeting
+      summary: Get graph for person latest meeting
+      operationId: getPersonLastGraphByName
+      parameters:
+        - $ref: "#/components/parameters/name"
+        - $ref: "#/components/parameters/hours"
+      responses:
+        '200':
+          description: OK
+          
 components:
   parameters:
     id:
