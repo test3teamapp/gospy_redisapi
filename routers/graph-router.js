@@ -29,7 +29,7 @@ router.get('/latest/byName/:name/hours/:hours', async (req, res) => {
             'MATCH (m:Meeting) , (pl:Place) , (allp:Person ), (p:Person {name: $name}) \
   WHERE (m)-[:AT_PLACE]->(pl)  AND (p)-[:PART_OF]->(m)\
   AND (allp)-[:PART_OF]->(m) \
-  AND m.date > $tPastHour RETURN COLLECT(allp), m, pl  ORDER BY m.date DESC',
+  AND m.date > $tPastHour RETURN COLLECT(allp) AS allp, m, pl  ORDER BY m.date DESC',
             {
                 params: {
                     name: name,
