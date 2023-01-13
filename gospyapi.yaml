@@ -260,6 +260,33 @@ paths:
       responses:
         '200':
           description: OK
+
+  /graph/count/places/byName/{name}/months/{months}:
+    get:
+      tags: 
+        - Graph
+      description: Get count for places a person had meetings last month(s)
+      summary: Get count for places a person had meetings last month(s)
+      operationId: getCountPlacesGraphByName
+      parameters:
+        - $ref: "#/components/parameters/name"
+        - $ref: "#/components/parameters/months"
+      responses:
+        '200':
+          description: OK
+
+  /graph/fof/byName/{name}:
+    get:
+      tags: 
+        - Graph
+      description: Friends of Friends
+      summary: Get the people that are known to the people that the user has meetings with
+      operationId: getFriendsOfFriendsGraphByName
+      parameters:
+        - $ref: "#/components/parameters/name"
+      responses:
+        '200':
+          description: OK
           
 components:
   parameters:
@@ -312,6 +339,14 @@ components:
       description: Hours past (for tracking)
       schema:
         $ref: "#/components/schemas/hours"
+
+    months:
+      name: months
+      in: path
+      required: true
+      description: Months past
+      schema:
+        $ref: "#/components/schemas/months"
 
     command:
       name: command
@@ -419,18 +454,18 @@ components:
         longitude:
           description: The longitudinal position on the globe
           $ref: "#/components/schemas/coordinate"
-          example: -2.518
+          example: 21.726
         latitude:
           description: The latitudinal position on the globe
           $ref: "#/components/schemas/coordinate"
-          example: 53.259
+          example: 38.233
 
     coordinate:
       description: >
         The longitudinal or latitudinal position on the globe
       type: number
       format: float
-      example: 45.678
+      example: 38.233
 
     radius:
       description: A radius, in miles
@@ -443,6 +478,12 @@ components:
       type: integer
       format: int32
       example: 12
+
+    months:
+      description: Months past
+      type: integer
+      format: int32
+      example: 2
 
     token:
       description: The token of the person's tracked device
