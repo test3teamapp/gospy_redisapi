@@ -97,18 +97,20 @@ router.get('/fof/byName/:name', async (req, res) => {
         );
         if (graphResult.ERROR) { // if there was an error, we just return the error
             // not the result we expected
-            console.log(" outer.get('/fof/byName/:" + name + ": Response of 1st call : " + graphResult.ERROR);
+            //console.log(" outer.get('/fof/byName/:" + name + ": Response of 1st call : " + graphResult.ERROR);
+            graphResult['friends'] = tempFriendSet;
             res.send({ name, graphResult })
         } else {
             // we have a set of first level connections (could be 0 if the person has no meetings)
 
             if (graphResult.data.length == 0) {
+                graphResult['friends'] = tempFriendSet;
                 res.send({ name, graphResult });
             } else {
                 graphResult.data.forEach(f => {
                     tempFriendSet.push(f.friend);
                 });
-                console.log(" outer.get('/fof/byName/:" + name + ":Friends list : " + tempFriendSet);
+                //console.log(" outer.get('/fof/byName/:" + name + ":Friends list : " + tempFriendSet);
 
                 graphResult = await meetingsGraph.roQuery(
                     'UNWIND $friendsList as friend\
@@ -122,7 +124,7 @@ router.get('/fof/byName/:name', async (req, res) => {
                         }
                     }
                 );
-                console.log(" outer.get('/fof/byName/:" + name + ":Response of 2nd call : " + JSON.stringify(graphResult));
+                //console.log(" outer.get('/fof/byName/:" + name + ":Response of 2nd call : " + JSON.stringify(graphResult));
 
                 if (!graphResult.data) { // if there was an error, we just return the error
                     // not the result we expected
@@ -131,6 +133,7 @@ router.get('/fof/byName/:name', async (req, res) => {
                 } else if (graphResult.ERROR) { // if there was an error, we just return the error
                     // not the result we expected
                     //console.log(" outer.get('/fof/byName/:name': Response of 2nd call : " + graphResult.ERROR);
+                    graphResult['friends'] = tempFriendSet;
                     res.send({ name, graphResult });
                 } else {
                     graphResult['friends'] = tempFriendSet; 

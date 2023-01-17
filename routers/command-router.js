@@ -64,7 +64,7 @@ router.get('/byName/:name/command/:command', async (req, httpResponse) => {
         //console.log("ERROR :" + `NO PERSON FOUND BY NAME: ${name}`)
         httpResponse.send({ "ERROR": `NO PERSON FOUND BY NAME: ${name}` });
     } else if (person.deviceToken == null) {
-        httpResponsees.send({ "ERROR": `NO DEVICE TOKEN REGISTERED YET TO : ${name}` });
+        httpResponse.send({ "ERROR": `NO DEVICE TOKEN REGISTERED YET TO : ${name}` });
     } else {
 
         let keyName = `${person.keyName}:locationHistory`

@@ -13,6 +13,7 @@ import { router as locationRouter } from './routers/location-router.js'
 import { router as trackRouter } from './routers/track-router.js'
 import { router as commandRouter } from './routers/command-router.js'
 import { router as graphRouter } from './routers/graph-router.js'
+import { router as userRouter } from './routers/user-router.js'
 
 /* create an express app and use JSON */
 const app = new express()
@@ -26,6 +27,7 @@ app.use('/persons', searchRouter)
 app.use('/tracking', trackRouter)
 app.use('/sendCommand', commandRouter)
 app.use('/graph', graphRouter)
+app.use('/userrepo', userRouter)
 
 /* set up swagger in the root */
 const swaggerDocument = YAML.load('gospyapi.yaml')
