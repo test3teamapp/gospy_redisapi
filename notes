@@ -1,3 +1,4 @@
 nohup 2>&1 npm start </dev/null &
+nohup 2>&1 node server.js &
 
 
