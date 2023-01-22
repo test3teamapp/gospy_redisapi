@@ -14,6 +14,7 @@ import { router as trackRouter } from './routers/track-router.js'
 import { router as commandRouter } from './routers/command-router.js'
 import { router as graphRouter } from './routers/graph-router.js'
 import { router as userRouter } from './routers/user-router.js'
+import { router as waitforluRouter } from './routers/waitforlu-router.js'
 
 /* create an express app and use JSON */
 const app = new express()
@@ -28,10 +29,11 @@ app.use('/tracking', trackRouter)
 app.use('/sendCommand', commandRouter)
 app.use('/graph', graphRouter)
 app.use('/userrepo', userRouter)
+app.use('/waitForLU', waitforluRouter)
 
 /* set up swagger in the root */
-const swaggerDocument = YAML.load('gospyapi.yaml')
-app.use('/', swaggerUi.serve, swaggerUi.setup(swaggerDocument))
+//const swaggerDocument = YAML.load('gospyapi.yaml')
+//app.use('/', swaggerUi.serve, swaggerUi.setup(swaggerDocument))
 
 /* start the server */
-app.listen(8084)
+app.listen(8085)
