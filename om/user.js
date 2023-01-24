@@ -7,7 +7,9 @@ class User extends Entity {}
 /* create a Schema for Person */
 const userSchema = new Schema(User, {
     name: { type: 'string' },
-    pass: { type: 'string' }
+    pass: { type: 'string' },
+    lastlogin: { type: 'date' },
+    token: { type: 'string' }
   })
 
   /* use the client to create a Repository just for Persons */

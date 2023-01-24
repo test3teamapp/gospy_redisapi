@@ -2,8 +2,12 @@ import { Router } from 'express'
 import { userRepository } from '../om/user.js'
 import { personRepository } from '../om/person.js'
 import { default as FCM } from 'fcm-node'
+import { default as crypto } from 'crypto'
 
 export const router = Router()
+
+// function alias
+const randomId = () => crypto.randomBytes(8).toString("hex");
 
 var fcm = new FCM(process.env.FCM_SERVER_API_KEY);
 
@@ -63,9 +67,31 @@ router.get('/checkpass/byName/:name/pass/:pass', async (req, res) => {
     res.send({ "RESULT": `STAY OUT !` })
   } else {
     if (name === user.name && pass === user.pass) {
-      res.send({ "RESULT": `OK` });
+      
+      user.lastlogin = new Date();
+      // add a session id to user
+      const stringtoken = randomId();
+      user.token = stringtoken;
+      await userRepository.save(user);
+      res.send({ "RESULT": `OK`, "token": stringtoken });
     } else {
       res.send({ "RESULT": `STAY OUT !` })
     }
+  }
+})
+
+router.get('/logout/byToken/:token', async (req, res) => {
+  const token = req.params.token
+  const user = await userRepository.search().where('token').equals(token).return.first()
+
+  //console.log(JSON.stringify(person.deviceToken))
+
+  if (user == null) {
+    res.send({ "RESULT": `TOKEN NOT FOUND !` })
+  } else {
+    // remove the session token
+    user.token = '';
+    await userRepository.save(user);
+    res.send({ "RESULT": `OK` });
   }
 })
