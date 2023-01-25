@@ -5,7 +5,7 @@ import swaggerUi from 'swagger-ui-express'
 import YAML from 'yamljs'
 import cors from 'cors'
 import { Server } from 'socket.io'
-import {default as crypto} from 'crypto'
+import { default as crypto } from 'crypto'
 // function alias
 const randomId = () => crypto.randomBytes(8).toString("hex");
 
@@ -20,8 +20,18 @@ const io = new Server(3000, {
 io.on("connection", (socket) => {
 
     console.log("a socket connected : " + socket.id);
-    socket.username = randomId();
-    console.log("a socket connected : username = " + socket.username);
+    socket.emit("whoAreU");
+
+    socket.on("setUsername", (username) => {
+        socket.username = username;
+        console.log(socket.id + " : username = " + socket.username);
+    });
+
+    socket.on('message', (message) => {
+        console.log(message);
+        io.emit('message', message);
+    });
+
 
     socket.on("disconnect", () => {
         console.log("socket disconnected : " + socket.username);

@@ -113,12 +113,16 @@ router.get('/getloggedin', async (req, res) => {
   const token = req.params.token
   const users = await userRepository.search().where('token').not.eq('loggedout').return.all();
 
-  console.log(JSON.stringify(users))
+  //console.log(JSON.stringify(users))
 
   if (users == null) {
     res.send({ "RESULT": `NO USERS LOGGED IN` })
   } else {
-    res.send({ "RESULT": `OK`, "users": users });
+    let usernames = [];
+    users.forEach(user => {
+      usernames.push(user.name);
+    });
+    res.send({ "RESULT": `OK`, "users": usernames });
   }
 });
 
