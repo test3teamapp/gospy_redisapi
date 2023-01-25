@@ -67,7 +67,7 @@ router.get('/checkpass/byName/:name/pass/:pass', async (req, res) => {
     res.send({ "RESULT": `STAY OUT !` })
   } else {
     if (name === user.name && pass === user.pass) {
-      
+
       user.lastlogin = new Date();
       // add a session id to user
       const stringtoken = randomId();
@@ -90,8 +90,36 @@ router.get('/logout/byToken/:token', async (req, res) => {
     res.send({ "RESULT": `TOKEN NOT FOUND !` })
   } else {
     // remove the session token
-    user.token = '';
+    user.token = 'loggedout';
     await userRepository.save(user);
     res.send({ "RESULT": `OK` });
   }
-})
+});
+
+router.get('/verify/byToken/:token', async (req, res) => {
+  const token = req.params.token
+  const user = await userRepository.search().where('token').equals(token).return.first()
+
+  //console.log(JSON.stringify(person.deviceToken))
+
+  if (user == null) {
+    res.send({ "RESULT": `TOKEN NOT FOUND !` })
+  } else {
+    res.send({ "RESULT": `OK` });
+  }
+});
+
+router.get('/getloggedin', async (req, res) => {
+  const token = req.params.token
+  const users = await userRepository.search().where('token').not.eq('loggedout').return.all();
+
+  console.log(JSON.stringify(users))
+
+  if (users == null) {
+    res.send({ "RESULT": `NO USERS LOGGED IN` })
+  } else {
+    res.send({ "RESULT": `OK`, "users": users });
+  }
+});
+
+
