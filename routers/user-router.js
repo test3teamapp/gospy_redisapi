@@ -3,6 +3,7 @@ import { userRepository } from '../om/user.js'
 import { personRepository } from '../om/person.js'
 import { default as FCM } from 'fcm-node'
 import { default as crypto } from 'crypto'
+import { Http2ServerResponse } from 'http2'
 
 export const router = Router()
 
@@ -82,19 +83,27 @@ router.get('/checkpass/byName/:name/pass/:pass', async (req, res) => {
 
 router.get('/logout/byToken/:token', async (req, res) => {
   const token = req.params.token
+  logoutUserByToken(token, res);
+});
+
+export async function logoutUserByToken(token, res) {
   const user = await userRepository.search().where('token').equals(token).return.first()
 
   //console.log(JSON.stringify(person.deviceToken))
 
   if (user == null) {
-    res.send({ "RESULT": `TOKEN NOT FOUND !` })
+    if (res) {
+      res.send({ "RESULT": `TOKEN NOT FOUND !` })
+    }
   } else {
     // remove the session token
     user.token = 'loggedout';
     await userRepository.save(user);
-    res.send({ "RESULT": `OK` });
+    if (res) {
+      res.send({ "RESULT": `OK` });
+    }
   }
-});
+}
 
 router.get('/verify/byToken/:token', async (req, res) => {
   const token = req.params.token

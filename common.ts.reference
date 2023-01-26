@@ -1,0 +1,8 @@
+// for reference
+
+export interface ChatMessage {
+    from:string;
+    to:string;
+    message:string;
+  }
+  

@@ -6,6 +6,7 @@ import YAML from 'yamljs'
 import cors from 'cors'
 import { Server } from 'socket.io'
 import { default as crypto } from 'crypto'
+import { logoutUserByToken } from './routers/user-router.js'
 // function alias
 const randomId = () => crypto.randomBytes(8).toString("hex");
 
@@ -18,27 +19,73 @@ const io = new Server(3000, {
 
 
 io.on("connection", (socket) => {
+    socket.sendBuffer = [];
 
     console.log("a socket connected : " + socket.id);
+
     socket.emit("whoAreU");
 
-    socket.on("setUsername", (username) => {
+    socket.on("setUsername", (username, token) => {
         socket.username = username;
-        console.log(socket.id + " : username = " + socket.username);
+        socket.token = token;
+        socket.join(username); // joins a room by the username, so we can singlecast sent messages
+        console.log(socket.id + " : username = " + socket.username + " / token = " + token);
+        const conMsg = {
+            from: "system",
+            to: "all",
+            message: "user " + socket.username + " joined chat",
+            event: {
+                type: "connect",
+                user: socket.username
+            }
+        }
+
+        io.emit("message", JSON.stringify(conMsg));
     });
 
     socket.on('message', (message) => {
         console.log(message);
-        io.emit('message', message);
+        const msgObj = JSON.parse(message);
+        if (msgObj.to === "all") {
+            io.emit('message', message);
+        } else {
+            io.in(msgObj.to).emit('message', message);
+        }
+    });
+
+    // user logged out, disconnect socket
+    socket.on("logout", async () => {
+        console.log("user logged out. disconnect socket : " + socket.username);
+        if (socket.username && socket.token) {
+            // make all Socket instances in the "room1" room disconnect (and close the low-level connection)
+            io.in(socket.username).disconnectSockets(true);
+        }
+    });
+
+    socket.on("disconnect", async () => {
+
+        if (socket.username && socket.token) {
+            // make all Socket instances in the "room1" room disconnect (and close the low-level connection)
+            io.in(socket.username).disconnectSockets(true);
+            console.log("socket disconnected : " + socket.username);
+            const discMsg = {
+                from: "system",
+                to: "all",
+                message: "user " + socket.username + " left chat",
+                event: {
+                    type: "disconnect",
+                    user: socket.username
+                }
+            }
+
+            io.emit("message", JSON.stringify(discMsg));
+            // delete all session records for this user. 
+            //logoutUserByToken(socket.token, null); // NEEDS THINKING
+        }
+
     });
 
 
-    socket.on("disconnect", () => {
-        console.log("socket disconnected : " + socket.username);
-        io.emit("chatmsg", "user " + socket.username + " left chat");
-        io.emit("disconnect_user", socket.username); // send notice to messages window to close 
-        // delete all session records for this user. 
-    });
 });
 
 /* import routers */
