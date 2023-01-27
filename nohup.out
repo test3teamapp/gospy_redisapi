@@ -6588,3 +6588,83 @@ samsungj5
 samsungj5
 samsungj5
 samsungj5
+a socket connected : 2L7uSHKSDJBqwcCpAAAB
+2L7uSHKSDJBqwcCpAAAB : username = testuser / token = 647eb11f9202c2cd
+a socket connected : Nn9_YmARBi88yCAyAAAD
+Nn9_YmARBi88yCAyAAAD : username = chris / token = 409d0c4916236503
+socket disconnected : testuser
+a socket connected : WlqSOy3n5O8l9da0AAAF
+WlqSOy3n5O8l9da0AAAF : username = testuser / token = 647eb11f9202c2cd
+user logged out. disconnect socket : testuser
+socket disconnected : testuser
+socket disconnected : chris
+a socket connected : m3RaG3q11Tq9TS1zAAAH
+m3RaG3q11Tq9TS1zAAAH : username = chris / token = 33e0e8db09af5755
+a socket connected : OOIQXv2BpHJ-HCrnAAAJ
+OOIQXv2BpHJ-HCrnAAAJ : username = bkat / token = 1d5af05cbcd37a67
+a socket connected : RhAwHkb6K5tt7lx6AAAL
+RhAwHkb6K5tt7lx6AAAL : username = testuser / token = 9083ea079aac7c8a
+{"from":"testuser","to":"chris","message":"hello chris"}
+{"from":"chris","to":"bkat","message":"hello bkat from chris"}
+{"from":"bkat","to":"testuser","message":"hi test from bkat"}
+{"from":"chris","to":"bkat","message":"dfg  dsfg"}
+{"from":"chris","to":"bkat","message":"dfg  dsfg dsfgdsf gsd"}
+{"from":"chris","to":"bkat","message":"dfg  dsfg dsfgdsf gsd sdfgdsfgds"}
+{"from":"bkat","to":"chris","message":",/mk,'/jkl;"}
+{"from":"chris","to":"bkat","message":"oup."}
+{"from":"chris","to":"bkat","message":"oup."}
+user logged out. disconnect socket : chris
+socket disconnected : chris
+{"from":"bkat","to":"testuser","message":"saSFAFASFA"}
+a socket connected : h6PFRZL6icB1JSHxAAAB
+h6PFRZL6icB1JSHxAAAB : username = bkat / token = 1d5af05cbcd37a67
+a socket connected : g32__GbupE0gS7J8AAAD
+g32__GbupE0gS7J8AAAD : username = testuser / token = 9083ea079aac7c8a
+user logged out. disconnect socket : testuser
+socket disconnected : testuser
+user logged out. disconnect socket : bkat
+socket disconnected : bkat
+a socket connected : quFZ-N-okr4A2VaBAAAF
+quFZ-N-okr4A2VaBAAAF : username = bkat / token = b3254c9f83faf3c6
+a socket connected : Hi5eczaED4rzy1GfAAAH
+user logged out. disconnect socket : undefined
+a socket connected : Yakh7i7vpFkVouSjAAAJ
+Yakh7i7vpFkVouSjAAAJ : username = chris / token = ecafa70b9a509af6
+Yakh7i7vpFkVouSjAAAJ : username = chris / token = ecafa70b9a509af6
+socket disconnected : chris
+a socket connected : NUn1PEKRa_1o8BE9AAAL
+NUn1PEKRa_1o8BE9AAAL : username = chris / token = ecafa70b9a509af6
+{"from":"chris","to":"bkat","message":"hl;lhjj;hk;"}
+{"from":"chris","to":"bkat","message":"hl;lhjj;hk;hj;jh;"}
+{"from":"chris","to":"bkat","message":"hl;lhjj;hk;hj;jh; fgjhkfjghkfghk"}
+{"from":"bkat","to":"chris","message":"fhgj gf hjfg"}
+{"from":"chris","to":"bkat","message":"hl;lhjj;hk;hj;jh; fgjhkfjghkfghk gfhjfg kjfg"}
+{"from":"bkat","to":"chris","message":"fhgj gf hjfg kfgkfgkhfgk"}
+{"from":"bkat","to":"chris","message":"khjkghkjhgjk"}
+{"from":"chris","to":"bkat","message":"hl;lhjj;hk;hj;jh; fgjhkfjghkfghk gfhjfg kjfgk hjkh"}
+{"from":"chris","to":"bkat","message":"hello "}
+{"from":"chris","to":"bkat","message":"hello hn,hjk"}
+{"from":"bkat","to":"chris","message":"jkhglghlhl"}
+{"from":"chris","to":"bkat","message":"hello hn,hjk ghkghkghk"}
+{"from":"bkat","to":"chris","message":"jkhglghlhl ghjkhg jkghkj gh"}
+{"from":"bkat","to":"chris","message":"jkhglghlhl ghjkhg jkghkj gh"}
+user logged out. disconnect socket : chris
+socket disconnected : chris
+user logged out. disconnect socket : bkat
+socket disconnected : bkat
+samsungj5
+samsungj5
+samsungj5
+samsungj5
+samsungj5
+samsungj5
+samsungj5
+a socket connected : Amyz2gqJ0waVLqruAAAN
+a socket connected : UvGj2Gb-BnrSxduVAAAP
+user logged out. disconnect socket : undefined
+UvGj2Gb-BnrSxduVAAAP : username = chris / token = 1fbfc7f90b3699f7
+UvGj2Gb-BnrSxduVAAAP : username = chris / token = 1fbfc7f90b3699f7
+a socket connected : Qig6Ak8PwwgwfsdaAAAB
+Qig6Ak8PwwgwfsdaAAAB : username = chris / token = c9c155ecb64b42cc
+a socket connected : EUPViz2GikQPIZxtAAAD
+EUPViz2GikQPIZxtAAAD : username = bkat / token = 2401f975cf4483f0

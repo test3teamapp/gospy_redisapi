@@ -28,6 +28,7 @@ io.on("connection", (socket) => {
     socket.on("setUsername", (username, token) => {
         socket.username = username;
         socket.token = token;
+        io.socketsLeave(username);
         socket.join(username); // joins a room by the username, so we can singlecast sent messages
         console.log(socket.id + " : username = " + socket.username + " / token = " + token);
         const conMsg = {
@@ -44,12 +45,13 @@ io.on("connection", (socket) => {
     });
 
     socket.on('message', (message) => {
+        socket.sendBuffer = [];
         console.log(message);
         const msgObj = JSON.parse(message);
         if (msgObj.to === "all") {
-            io.emit('message', message);
+            io.volotile.emit('message', message);
         } else {
-            io.in(msgObj.to).emit('message', message);
+            io.in(msgObj.to).volatile.emit('message', message);
         }
     });
 
@@ -120,4 +122,4 @@ app.use('/waitForLU', waitforluRouter)
 
 /* start the http rs
 server */
-app.listen(8085)
+app.listen(8084)
