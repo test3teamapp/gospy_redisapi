@@ -7137,3 +7137,71 @@ user logged out. disconnect socket : bkat
 socket disconnected : bkat
 user logged out. disconnect socket : chris
 socket disconnected : chris
+samsungj5
+samsungj5
+samsungj5
+samsungj5
+samsungj5
+samsungj5
+samsungj5
+samsungj5
+samsungj5
+samsungj5
+samsungj5
+samsungj5
+samsungj5
+a socket connected : o5RxOKwoRC_bglwdAAAB
+o5RxOKwoRC_bglwdAAAB : username = chris / token = c4b8bf45a02a3e88
+o5RxOKwoRC_bglwdAAAB : username = chris / token = c4b8bf45a02a3e88
+a socket connected : nWAnnckxWQaZqt6FAAAD
+nWAnnckxWQaZqt6FAAAD : username = testuser / token = d7744a90858a39c9
+nWAnnckxWQaZqt6FAAAD : username = testuser / token = d7744a90858a39c9
+{"from":"chris","to":"testuser","message":"Kalos ton "}
+socket disconnected : testuser
+HuaweiP8lite
+{"from":"chris","to":"testuser","message":"Sto chat δεν κραταει ακομα τα μηνηματα"}
+{"from":"chris","to":"testuser","message":"Ειναι για να μην τα πιανει η CIA !!!"}
+{"from":"chris","to":"testuser","message":"Αν φυγεις απο την σελιδα χανονται"}
+HuaweiP8lite
+samsungj5
+average lat for meeting :38.233
+average lng for meeting :21.727
+Maizonos 367, Patra 262 22, Greece
+ChIJhWCFniU2XhMRiUH4RemIO5c
+ name in meetings names : HuaweiP8lite 
+ name in meetings names : samsungj5 
+current meetings found in area  ["Korinthou 499, Patra 262 22, Greece"]
+Aggregate meeting @ "Korinthou 499, Patra 262 22, Greece"
+ check whether the place exists : Korinthou 499, Patra 262 22, Greece 
+ searching for existing meeting. result =  {"metadata":["Cached execution: 1","Query internal execution time: 0.193562 milliseconds"],"data":[]}
+ created meeting 
+HuaweiP8lite
+samsungj5
+xiaominote8T
+average lat for meeting :38.233
+average lng for meeting :21.727
+Maizonos 367, Patra 262 22, Greece
+ChIJhWCFniU2XhMRiUH4RemIO5c
+ name in meetings names : HuaweiP8lite 
+ name in meetings names : samsungj5 
+ name in meetings names : xiaominote8T 
+current meetings found in area  ["Korinthou 499, Patra 262 22, Greece"]
+Aggregate meeting @ "Korinthou 499, Patra 262 22, Greece"
+ check whether the place exists : Korinthou 499, Patra 262 22, Greece 
+ searching for existing meeting. result =  {"metadata":["Cached execution: 1","Query internal execution time: 0.256262 milliseconds"],"data":[{"m":{"id":69,"labels":["Meeting"],"properties":{"date":1674896605938,"stringDate":"Sat Jan 28 2023 09:03:25 GMT+0000 (Coordinated Universal Time)"}}}]}
+ joining meeting that started @ Sat Jan 28 2023 09:03:25 GMT+0000 (Coordinated Universal Time)
+HuaweiP8lite
+samsungj5
+xiaominote8T
+average lat for meeting :38.233
+average lng for meeting :21.727
+Maizonos 367, Patra 262 22, Greece
+ChIJhWCFniU2XhMRiUH4RemIO5c
+ name in meetings names : HuaweiP8lite 
+ name in meetings names : samsungj5 
+ name in meetings names : xiaominote8T 
+current meetings found in area  ["Korinthou 499, Patra 262 22, Greece"]
+Aggregate meeting @ "Korinthou 499, Patra 262 22, Greece"
+ check whether the place exists : Korinthou 499, Patra 262 22, Greece 
+ searching for existing meeting. result =  {"metadata":["Cached execution: 1","Query internal execution time: 0.272272 milliseconds"],"data":[{"m":{"id":69,"labels":["Meeting"],"properties":{"date":1674896605938,"stringDate":"Sat Jan 28 2023 09:03:25 GMT+0000 (Coordinated Universal Time)"}}}]}
+ joining meeting that started @ Sat Jan 28 2023 09:03:25 GMT+0000 (Coordinated Universal Time)

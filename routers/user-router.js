@@ -73,6 +73,7 @@ router.get('/checkpass/byName/:name/pass/:pass', async (req, res) => {
       // add a session id to user
       const stringtoken = randomId();
       user.token = stringtoken;
+      user.chat = 'online';
       await userRepository.save(user);
       res.send({ "RESULT": `OK`, "token": stringtoken });
     } else {
@@ -98,6 +99,7 @@ export async function logoutUserByToken(token, res) {
   } else {
     // remove the session token
     user.token = 'loggedout';
+    user.chat = 'offline';
     await userRepository.save(user);
     if (res) {
       res.send({ "RESULT": `OK` });
@@ -118,6 +120,28 @@ router.get('/verify/byToken/:token', async (req, res) => {
   }
 });
 
+router.get('/setchatstatus/:status/byToken/:token', async (req, res) => {
+  const status = req.params.status
+  const token = req.params.token
+  if (status != "offline" && status != "online") {
+    res.send({ "RESULT": `NOT VALID STATUS !` })
+  }
+  const user = await userRepository.search().where('token').equals(token).return.first()
+
+  //console.log(JSON.stringify(person.deviceToken))
+
+  if (user == null) {
+    res.send({ "RESULT": `TOKEN NOT FOUND !` })
+  } else {
+
+    user.chat = status;
+    await userRepository.save(user);
+    if (res) {
+      res.send({ "RESULT": `OK` });
+    }
+  }
+});
+
 router.get('/getloggedin', async (req, res) => {
   const token = req.params.token
   const users = await userRepository.search().where('token').not.eq('loggedout').return.all();
@@ -135,4 +159,20 @@ router.get('/getloggedin', async (req, res) => {
   }
 });
 
+router.get('/getonline', async (req, res) => {
+  const token = req.params.token
+  const users = await userRepository.search().where('chat').eq('online').return.all();
+
+  //console.log(JSON.stringify(users))
+
+  if (users == null) {
+    res.send({ "RESULT": `NO USERS LOGGED IN` })
+  } else {
+    let usernames = [];
+    users.forEach(user => {
+      usernames.push(user.name);
+    });
+    res.send({ "RESULT": `OK`, "users": usernames });
+  }
+});
 
