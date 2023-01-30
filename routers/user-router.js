@@ -4,6 +4,7 @@ import { personRepository } from '../om/person.js'
 import { default as FCM } from 'fcm-node'
 import { default as crypto } from 'crypto'
 import { Http2ServerResponse } from 'http2'
+import * as common  from '../common'
 
 export const router = Router()
 
@@ -94,7 +95,7 @@ export async function logoutUserByToken(token, res) {
 
   if (user == null) {
     if (res) {
-      res.send({ "RESULT": `TOKEN NOT FOUND !` })
+      res.send({ "RESULT": common.TOKEN_NOT_FOUND })
     }
   } else {
     // remove the session token
@@ -114,7 +115,7 @@ router.get('/verify/byToken/:token', async (req, res) => {
   //console.log(JSON.stringify(person.deviceToken))
 
   if (user == null) {
-    res.send({ "RESULT": `TOKEN NOT FOUND !` })
+    res.send({ "RESULT": common.TOKEN_NOT_FOUND })
   } else {
     res.send({ "RESULT": `OK` });
   }
@@ -131,7 +132,7 @@ router.get('/setchatstatus/:status/byToken/:token', async (req, res) => {
   //console.log(JSON.stringify(person.deviceToken))
 
   if (user == null) {
-    res.send({ "RESULT": `TOKEN NOT FOUND !` })
+    res.send({ "RESULT": common.TOKEN_NOT_FOUND })
   } else {
 
     user.chat = status;

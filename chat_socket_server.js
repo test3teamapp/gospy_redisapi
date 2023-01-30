@@ -11,6 +11,7 @@ const io = new Server(3000, {
 
 io.on("connection", (socket) => {
     socket.sendBuffer = [];
+    //io.in(username).disconnectSockets(true); // remove other socket created by previous loggins by user
 
     console.log("a socket connected : " + socket.id);
 
@@ -55,6 +56,18 @@ io.on("connection", (socket) => {
         if ((socket.username != undefined) && (socket.token != undefined)) {
             // make all Socket instances in the "room1" room disconnect (and close the low-level connection)
             io.in(socket.username).disconnectSockets(true);
+                    console.log("socket disconnected : " + socket.username);
+                    const discMsg = {
+                        from: "system",
+                        to: "all",
+                        message: "user " + socket.username + " left chat",
+                        event: {
+                            type: "disconnect",
+                            user: socket.username
+                        }
+                    }
+
+                    io.emit("message", JSON.stringify(discMsg));
         }
     });
 
@@ -65,29 +78,45 @@ io.on("connection", (socket) => {
         // the chat status to offline in the db
 
         if (socket.username && socket.token) {
-            // change chat status for user in db
+            // check if the disconnect is for the currently logged in user
             http.get({
                 hostname: 'localhost',
-                port: 8085,
-                path: '/userrepo/setchatstatus/offline/byToken/' + socket.token,
+                port: 8084,
+                path: '/userrepo/verify/byToken/' + socket.token,
                 agent: false,  // Create a new agent just for this one request
             }, (res) => {
-                // Do stuff with response
-            });
-            // make all Socket instances in the "room1" room disconnect (and close the low-level connection)
-            io.in(socket.username).disconnectSockets(true);
-            console.log("socket disconnected : " + socket.username);
-            const discMsg = {
-                from: "system",
-                to: "all",
-                message: "user " + socket.username + " left chat",
-                event: {
-                    type: "disconnect",
-                    user: socket.username
-                }
-            }
 
-            io.emit("message", JSON.stringify(discMsg));
+                if (res.RESULT != "OK") {
+                    // the user token is not valid.
+                    // user mustr have logged in from another browser.
+                    // just kill this socket
+                    socket.disconnect();
+                } else {
+                    // change chat status for user in db
+                    http.get({
+                        hostname: 'localhost',
+                        port: 8084,
+                        path: '/userrepo/setchatstatus/offline/byToken/' + socket.token,
+                        agent: false,  // Create a new agent just for this one request
+                    }, (res) => {
+                        // Do stuff with response
+                    });
+                    // make all Socket instances in the "room1" room disconnect (and close the low-level connection)
+                    io.in(socket.username).disconnectSockets(true);
+                    console.log("socket disconnected : " + socket.username);
+                    const discMsg = {
+                        from: "system",
+                        to: "all",
+                        message: "user " + socket.username + " left chat",
+                        event: {
+                            type: "disconnect",
+                            user: socket.username
+                        }
+                    }
+
+                    io.emit("message", JSON.stringify(discMsg));
+                }
+            });
         }
 
     });
