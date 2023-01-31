@@ -1,7 +1,7 @@
 import { Server } from 'socket.io'
 import { default as http } from 'http'
 
-const io = new Server(3001, {
+const io = new Server(3000, {
     cors: {
         origin: "*",
         methods: ["GET", "POST"]
@@ -34,7 +34,7 @@ io.on("connection", (socket) => {
                 http.get({
                     hostname: 'localhost',
                     port: 8085,
-                    path: '/userrepo/delete/byToken/' + socket.token,
+                    path: '/userrepo/delete/byName/' + socket.username,
                     agent: false,  // Create a new agent just for this one request
                 }, (res) => {
     

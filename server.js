@@ -42,4 +42,4 @@ app.use('/waitForLU', waitforluRouter)
 
 /* start the http rs
 server */
-app.listen(8085)
+app.listen(8084)
