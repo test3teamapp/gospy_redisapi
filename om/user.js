@@ -10,7 +10,8 @@ const userSchema = new Schema(User, {
     pass: { type: 'string' },
     lastlogin: { type: 'date' },
     token: { type: 'string' },
-    chat: {type: 'string'}
+    chat: {type: 'string'},
+    expires:{type: 'string'}
   })
 
   /* use the client to create a Repository just for Persons */

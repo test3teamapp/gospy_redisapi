@@ -1,7 +1,7 @@
 import { Server } from 'socket.io'
 import { default as http } from 'http'
 
-const io = new Server(3000, {
+const io = new Server(3001, {
     cors: {
         origin: "*",
         methods: ["GET", "POST"]
@@ -14,6 +14,37 @@ io.on("connection", (socket) => {
     //io.in(username).disconnectSockets(true); // remove other socket created by previous loggins by user
 
     console.log("a socket connected : " + socket.id);
+
+    function checkForExpiredUser() {
+        socket.emit("sendExpiration");
+    }
+
+    const intervalCheckForExpirationObject = setInterval(checkForExpiredUser, 60000); // every minute;
+
+    socket.on("checkExpiration", (expirationStringDateMillis) => {
+        
+        if (expirationStringDateMillis != "never") {
+            console.log("Expiration for user : " + socket.username + " = " + expirationStringDateMillis);
+            const expirationDate = new Date(Number.parseInt(expirationStringDateMillis));
+
+            const now = new Date();
+            if (expirationDate - now <= 0) {
+                socket.emit("expired"); // notify site to logout user
+                // remove user from db
+                http.get({
+                    hostname: 'localhost',
+                    port: 8085,
+                    path: '/userrepo/delete/byToken/' + socket.token,
+                    agent: false,  // Create a new agent just for this one request
+                }, (res) => {
+    
+                    if (res.RESULT != "OK") {
+                       console.error("temporary user " + socket.username + " could not be deleted after expiration");
+                    }
+                });
+            }
+        }
+    });
 
     socket.on("setUsername", (username, token) => {
         socket.username = username;
@@ -56,18 +87,18 @@ io.on("connection", (socket) => {
         if ((socket.username != undefined) && (socket.token != undefined)) {
             // make all Socket instances in the "room1" room disconnect (and close the low-level connection)
             io.in(socket.username).disconnectSockets(true);
-                    console.log("socket disconnected : " + socket.username);
-                    const discMsg = {
-                        from: "system",
-                        to: "all",
-                        message: "user " + socket.username + " left chat",
-                        event: {
-                            type: "disconnect",
-                            user: socket.username
-                        }
-                    }
+            console.log("socket disconnected : " + socket.username);
+            const discMsg = {
+                from: "system",
+                to: "all",
+                message: "user " + socket.username + " left chat",
+                event: {
+                    type: "disconnect",
+                    user: socket.username
+                }
+            }
 
-                    io.emit("message", JSON.stringify(discMsg));
+            io.emit("message", JSON.stringify(discMsg));
         }
     });
 
@@ -76,6 +107,9 @@ io.on("connection", (socket) => {
         // e.g. user closed the browser
         // it has not necessary loggout out, but we need to update
         // the chat status to offline in the db
+
+        // clear the repeated check fro expiration of user login
+        clearInterval(intervalCheckForExpirationObject);
 
         if (socket.username && socket.token) {
             // check if the disconnect is for the currently logged in user

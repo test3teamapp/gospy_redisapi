@@ -1,2 +1,4 @@
-export const TOKEN_NOT_FOUND = "TOKEN NOT FOUND !";
-  
+export const RESULT_TOKEN_NOT_FOUND = "TOKEN NOT FOUND !";
+export const RESULT_NAME_NOT_FOUND = "NAME NOT FOUND !";
+export const RESULT_USER_EXPIRED = "USER EXPIRED !";
+export const RESULT_OK = "OK";

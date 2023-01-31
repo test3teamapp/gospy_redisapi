@@ -7205,3 +7205,21 @@ Aggregate meeting @ "Korinthou 499, Patra 262 22, Greece"
  check whether the place exists : Korinthou 499, Patra 262 22, Greece 
  searching for existing meeting. result =  {"metadata":["Cached execution: 1","Query internal execution time: 0.272272 milliseconds"],"data":[{"m":{"id":69,"labels":["Meeting"],"properties":{"date":1674896605938,"stringDate":"Sat Jan 28 2023 09:03:25 GMT+0000 (Coordinated Universal Time)"}}}]}
  joining meeting that started @ Sat Jan 28 2023 09:03:25 GMT+0000 (Coordinated Universal Time)
+node:internal/errors:484
+    ErrorCaptureStackTrace(err);
+    ^
+
+Error [ERR_MODULE_NOT_FOUND]: Cannot find module '/home/jimbo/gospy_redisapi/common' imported from /home/jimbo/gospy_redisapi/routers/user-router.js
+    at new NodeError (node:internal/errors:393:5)
+    at finalizeResolution (node:internal/modules/esm/resolve:323:11)
+    at moduleResolve (node:internal/modules/esm/resolve:916:10)
+    at defaultResolve (node:internal/modules/esm/resolve:1124:11)
+    at nextResolve (node:internal/modules/esm/loader:163:28)
+    at ESMLoader.resolve (node:internal/modules/esm/loader:841:30)
+    at ESMLoader.getModuleJob (node:internal/modules/esm/loader:424:18)
+    at ModuleWrap.<anonymous> (node:internal/modules/esm/module_job:76:40)
+    at link (node:internal/modules/esm/module_job:75:36) {
+  code: 'ERR_MODULE_NOT_FOUND'
+}
+
+Node.js v18.12.1
