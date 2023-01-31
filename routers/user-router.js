@@ -87,22 +87,11 @@ router.delete('/:id', async (req, res) => {
   res.send({ entityId: req.params.id })
 })
 
-router.get('/delete/byToken/:token', async (req, res) => {
-  const token = req.params.token;
-  deleteUserByToken(token, res);
+router.get('/delete/byName/:name', async (req, res) => {
+  console.log('delete/byName');
+  const name = req.params.name;
+  deleteUserByName(name, res);
 })
-
-export async function deleteUserByToken(token, res) {
-
-  const user = await userRepository.search().where('token').equals(token).return.first()
-
-  if (user == null) {
-    res.send({ "RESULT": common.RESULT_TOKEN_NOT_FOUND })
-  } else {
-    await userRepository.remove(user.entityId);
-    res.send({ "RESULT": common.RESULT_USER_EXPIRED })
-  }
-}
 
 export async function deleteUserByName(name, res) {
 

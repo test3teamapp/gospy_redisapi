@@ -1,6 +1,9 @@
 import { Server } from 'socket.io'
 import { default as http } from 'http'
 
+const portOfApiServer = 8084;
+const checkForExpirationOfTempUserIntervalInMinutes = 1;
+
 const io = new Server(3000, {
     cors: {
         origin: "*",
@@ -19,28 +22,30 @@ io.on("connection", (socket) => {
         socket.emit("sendExpiration");
     }
 
-    const intervalCheckForExpirationObject = setInterval(checkForExpiredUser, 60000); // every minute;
+    const intervalCheckForExpirationObject = setInterval(checkForExpiredUser, checkForExpirationOfTempUserIntervalInMinutes * 6000); // every minute;
 
     socket.on("checkExpiration", (expirationStringDateMillis) => {
-        
+
         if (expirationStringDateMillis != "never") {
             console.log("Expiration for user : " + socket.username + " = " + expirationStringDateMillis);
             const expirationDate = new Date(Number.parseInt(expirationStringDateMillis));
 
             const now = new Date();
-            if (expirationDate - now <= 0) {
+            if (expirationDate - now < 0) {
                 socket.emit("expired"); // notify site to logout user
                 // remove user from db
                 http.get({
                     hostname: 'localhost',
-                    port: 8084,
+                    port: portOfApiServer,
                     path: '/userrepo/delete/byName/' + socket.username,
                     agent: false,  // Create a new agent just for this one request
+                    headers: {
+                        'Accept': 'application/json',
+                    },
                 }, (res) => {
-    
-                    if (res.RESULT != "OK") {
-                       console.error("temporary user " + socket.username + " could not be deleted after expiration");
-                    }
+
+                    console.error("delete temporary user " + socket.username + ":" + res.RESULT);
+
                 });
             }
         }
@@ -115,9 +120,12 @@ io.on("connection", (socket) => {
             // check if the disconnect is for the currently logged in user
             http.get({
                 hostname: 'localhost',
-                port: 8084,
+                port: portOfApiServer,
                 path: '/userrepo/verify/byToken/' + socket.token,
                 agent: false,  // Create a new agent just for this one request
+                headers: {
+                    'Accept': 'application/json',
+                },
             }, (res) => {
 
                 if (res.RESULT != "OK") {
@@ -129,7 +137,7 @@ io.on("connection", (socket) => {
                     // change chat status for user in db
                     http.get({
                         hostname: 'localhost',
-                        port: 8084,
+                        port: portOfApiServer,
                         path: '/userrepo/setchatstatus/offline/byToken/' + socket.token,
                         agent: false,  // Create a new agent just for this one request
                     }, (res) => {
