@@ -33,7 +33,7 @@ io.on("connection", (socket) => {
                 // remove user from db
                 http.get({
                     hostname: 'localhost',
-                    port: 8085,
+                    port: 8084,
                     path: '/userrepo/delete/byName/' + socket.username,
                     agent: false,  // Create a new agent just for this one request
                 }, (res) => {
