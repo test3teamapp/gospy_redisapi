@@ -1,10 +1,12 @@
 import { Server } from 'socket.io'
 import { default as http } from 'http'
+import { default as https } from 'https'
 
-const portOfApiServer = 8084;
+const portOfApiServer = 8084; // traefik entrypoint
+const hostOfApiServer = "gospy.rheotome.eu"; // traefik entrypoint
 const checkForExpirationOfTempUserIntervalInMinutes = 1;
 
-const io = new Server(3000, {
+const io = new Server(13000, { // traefik will open https entrypoint @ 3000
     cors: {
         origin: "*",
         methods: ["GET", "POST"]
@@ -34,8 +36,8 @@ io.on("connection", (socket) => {
             if (expirationDate - now < 0) {
                 socket.emit("expired"); // notify site to logout user
                 // remove user from db
-                http.get({
-                    hostname: 'localhost',
+                https.get({
+                    hostname: hostOfApiServer,
                     port: portOfApiServer,
                     path: '/userrepo/delete/byName/' + socket.username,
                     agent: false,  // Create a new agent just for this one request
@@ -118,8 +120,8 @@ io.on("connection", (socket) => {
 
         if (socket.username && socket.token) {
             // check if the disconnect is for the currently logged in user
-            http.get({
-                hostname: 'localhost',
+            https.get({
+                hostname: hostOfApiServer,
                 port: portOfApiServer,
                 path: '/userrepo/verify/byToken/' + socket.token,
                 agent: false,  // Create a new agent just for this one request
@@ -135,8 +137,8 @@ io.on("connection", (socket) => {
                     socket.disconnect();
                 } else {
                     // change chat status for user in db
-                    http.get({
-                        hostname: 'localhost',
+                    https.get({
+                        hostname: hostOfApiServer,
                         port: portOfApiServer,
                         path: '/userrepo/setchatstatus/offline/byToken/' + socket.token,
                         agent: false,  // Create a new agent just for this one request

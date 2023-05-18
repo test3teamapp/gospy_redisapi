@@ -42,4 +42,4 @@ app.use('/waitForLU', waitforluRouter)
 
 /* start the http rs
 server */
-app.listen(8084)
+app.listen(18084) // traefik will open the https entrypoint @ 8084
